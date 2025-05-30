@@ -1,0 +1,569 @@
+#pragma version 10
+#pragma typetrack false
+
+// algopy.arc4.ARC4Contract.approval_program() -> uint64:
+main:
+    intcblock 0 1 4
+    bytecblock "access_active" "access_holder" "access_expires_at" "assetid"
+    // smart_contracts/nft/contract.py:134
+    // class NFTRevoke(ARC4Contract):
+    txn NumAppArgs
+    bz main_after_if_else@13
+    pushbytess 0x3cf31b31 0x55d4c4c3 0x1574535a 0x6afe79a8 0xf4c32aea 0xeb0fc35c 0x36df361a // method "create_application(asset)void", method "asset_config_clawback(asset)void", method "opt_in_to_asset(pay)void", method "grant_access(account,uint64)void", method "revoke_access()void", method "emergency_revoke()void", method "get_status()(address,uint64,uint64)"
+    txna ApplicationArgs 0
+    match main_create_application_route@3 main_asset_config_clawback_route@4 main_opt_in_to_asset_route@5 main_grant_access_route@6 main_revoke_access_route@7 main_emergency_revoke_route@8 main_get_status_route@9
+
+main_after_if_else@13:
+    // smart_contracts/nft/contract.py:134
+    // class NFTRevoke(ARC4Contract):
+    intc_0 // 0
+    return
+
+main_get_status_route@9:
+    // smart_contracts/nft/contract.py:224
+    // @abimethod()
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub get_status
+    swap
+    itob
+    swap
+    itob
+    cover 2
+    concat
+    swap
+    concat
+    pushbytes 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_emergency_revoke_route@8:
+    // smart_contracts/nft/contract.py:207
+    // @abimethod()
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub emergency_revoke
+    intc_1 // 1
+    return
+
+main_revoke_access_route@7:
+    // smart_contracts/nft/contract.py:189
+    // @abimethod()
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub revoke_access
+    intc_1 // 1
+    return
+
+main_grant_access_route@6:
+    // smart_contracts/nft/contract.py:173
+    // @abimethod()
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/nft/contract.py:134
+    // class NFTRevoke(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txnas Accounts
+    txna ApplicationArgs 2
+    btoi
+    // smart_contracts/nft/contract.py:173
+    // @abimethod()
+    callsub grant_access
+    intc_1 // 1
+    return
+
+main_opt_in_to_asset_route@5:
+    // smart_contracts/nft/contract.py:157
+    // @abimethod()
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/nft/contract.py:134
+    // class NFTRevoke(ARC4Contract):
+    txn GroupIndex
+    intc_1 // 1
+    -
+    dup
+    gtxns TypeEnum
+    intc_1 // pay
+    ==
+    assert // transaction type is pay
+    // smart_contracts/nft/contract.py:157
+    // @abimethod()
+    callsub opt_in_to_asset
+    intc_1 // 1
+    return
+
+main_asset_config_clawback_route@4:
+    // smart_contracts/nft/contract.py:147
+    // @abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/nft/contract.py:134
+    // class NFTRevoke(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txnas Assets
+    // smart_contracts/nft/contract.py:147
+    // @abimethod
+    callsub asset_config_clawback
+    intc_1 // 1
+    return
+
+main_create_application_route@3:
+    // smart_contracts/nft/contract.py:140
+    // @abimethod(allow_actions=["NoOp"], create="require")
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    !
+    assert // can only call when creating
+    // smart_contracts/nft/contract.py:134
+    // class NFTRevoke(ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txnas Assets
+    // smart_contracts/nft/contract.py:140
+    // @abimethod(allow_actions=["NoOp"], create="require")
+    callsub create_application
+    intc_1 // 1
+    return
+
+
+// smart_contracts.nft.contract.NFTRevoke.create_application(asset_id: uint64) -> void:
+create_application:
+    // smart_contracts/nft/contract.py:140-141
+    // @abimethod(allow_actions=["NoOp"], create="require")
+    // def create_application(self, asset_id: Asset) -> None:
+    proto 1 0
+    // smart_contracts/nft/contract.py:142
+    // self.assetid = asset_id.id
+    bytec_3 // "assetid"
+    frame_dig -1
+    app_global_put
+    // smart_contracts/nft/contract.py:143
+    // self.access_holder = Global.zero_address
+    bytec_1 // "access_holder"
+    global ZeroAddress
+    app_global_put
+    // smart_contracts/nft/contract.py:144
+    // self.access_expires_at = UInt64(0)
+    bytec_2 // "access_expires_at"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/nft/contract.py:145
+    // self.access_active = UInt64(0)
+    bytec_0 // "access_active"
+    intc_0 // 0
+    app_global_put
+    retsub
+
+
+// smart_contracts.nft.contract.NFTRevoke.asset_config_clawback(asset: uint64) -> void:
+asset_config_clawback:
+    // smart_contracts/nft/contract.py:147-148
+    // @abimethod
+    // def asset_config_clawback(self, asset: Asset) -> None:
+    proto 1 0
+    // smart_contracts/nft/contract.py:149
+    // assert asset.manager == Txn.sender
+    frame_dig -1
+    asset_params_get AssetManager
+    assert // asset exists
+    txn Sender
+    ==
+    assert
+    // smart_contracts/nft/contract.py:150-155
+    // itxn.AssetConfig(
+    //     config_asset=asset,
+    //     manager= Txn.sender,
+    //     clawback=Global.current_application_address, # Set clawback to app address
+    //     fee=0,
+    // ).submit()
+    itxn_begin
+    // smart_contracts/nft/contract.py:152
+    // manager= Txn.sender,
+    txn Sender
+    // smart_contracts/nft/contract.py:153
+    // clawback=Global.current_application_address, # Set clawback to app address
+    global CurrentApplicationAddress
+    itxn_field ConfigAssetClawback
+    itxn_field ConfigAssetManager
+    frame_dig -1
+    itxn_field ConfigAsset
+    // smart_contracts/nft/contract.py:150
+    // itxn.AssetConfig(
+    pushint 3 // acfg
+    itxn_field TypeEnum
+    // smart_contracts/nft/contract.py:154
+    // fee=0,
+    intc_0 // 0
+    itxn_field Fee
+    // smart_contracts/nft/contract.py:150-155
+    // itxn.AssetConfig(
+    //     config_asset=asset,
+    //     manager= Txn.sender,
+    //     clawback=Global.current_application_address, # Set clawback to app address
+    //     fee=0,
+    // ).submit()
+    itxn_submit
+    retsub
+
+
+// smart_contracts.nft.contract.NFTRevoke.opt_in_to_asset(mbrpay: uint64) -> void:
+opt_in_to_asset:
+    // smart_contracts/nft/contract.py:157-158
+    // @abimethod()
+    // def opt_in_to_asset(self, mbrpay: gtxn.PaymentTransaction) -> None:
+    proto 1 0
+    // smart_contracts/nft/contract.py:159
+    // assert Txn.sender == Global.creator_address
+    txn Sender
+    global CreatorAddress
+    ==
+    assert
+    // smart_contracts/nft/contract.py:160
+    // assert not Global.current_application_address.is_opted_in(Asset(self.assetid))
+    global CurrentApplicationAddress
+    intc_0 // 0
+    bytec_3 // "assetid"
+    app_global_get_ex
+    assert // check self.assetid exists
+    swap
+    dig 1
+    asset_holding_get AssetBalance
+    bury 1
+    !
+    assert
+    // smart_contracts/nft/contract.py:162
+    // assert mbrpay.receiver == Global.current_application_address
+    frame_dig -1
+    gtxns Receiver
+    global CurrentApplicationAddress
+    ==
+    assert
+    // smart_contracts/nft/contract.py:164
+    // assert mbrpay.amount == Global.min_balance + Global.asset_opt_in_min_balance
+    frame_dig -1
+    gtxns Amount
+    global MinBalance
+    global AssetOptInMinBalance
+    +
+    ==
+    assert
+    // smart_contracts/nft/contract.py:166-171
+    // itxn.AssetTransfer(
+    //     xfer_asset= self.assetid,
+    //     asset_receiver= Global.current_application_address,
+    //     asset_amount= 0,
+    //     fee=0,
+    // ).submit()
+    itxn_begin
+    // smart_contracts/nft/contract.py:168
+    // asset_receiver= Global.current_application_address,
+    global CurrentApplicationAddress
+    // smart_contracts/nft/contract.py:169
+    // asset_amount= 0,
+    intc_0 // 0
+    itxn_field AssetAmount
+    itxn_field AssetReceiver
+    itxn_field XferAsset
+    // smart_contracts/nft/contract.py:166
+    // itxn.AssetTransfer(
+    intc_2 // axfer
+    itxn_field TypeEnum
+    // smart_contracts/nft/contract.py:170
+    // fee=0,
+    intc_0 // 0
+    itxn_field Fee
+    // smart_contracts/nft/contract.py:166-171
+    // itxn.AssetTransfer(
+    //     xfer_asset= self.assetid,
+    //     asset_receiver= Global.current_application_address,
+    //     asset_amount= 0,
+    //     fee=0,
+    // ).submit()
+    itxn_submit
+    retsub
+
+
+// smart_contracts.nft.contract.NFTRevoke.grant_access(holder: bytes, duration_secs: uint64) -> void:
+grant_access:
+    // smart_contracts/nft/contract.py:173-174
+    // @abimethod()
+    // def grant_access(self, holder: Account, duration_secs: UInt64) -> None:
+    proto 2 0
+    // smart_contracts/nft/contract.py:175
+    // assert self.access_active == 0, "Access already active"
+    intc_0 // 0
+    bytec_0 // "access_active"
+    app_global_get_ex
+    assert // check self.access_active exists
+    !
+    assert // Access already active
+    // smart_contracts/nft/contract.py:177
+    // self.access_holder = holder
+    bytec_1 // "access_holder"
+    frame_dig -2
+    app_global_put
+    // smart_contracts/nft/contract.py:178
+    // self.access_expires_at = Global.latest_timestamp + duration_secs
+    global LatestTimestamp
+    frame_dig -1
+    +
+    bytec_2 // "access_expires_at"
+    swap
+    app_global_put
+    // smart_contracts/nft/contract.py:179
+    // self.access_active = UInt64(1)
+    bytec_0 // "access_active"
+    intc_1 // 1
+    app_global_put
+    // smart_contracts/nft/contract.py:181-187
+    // # Send the NFT to the holder
+    // itxn.AssetTransfer(
+    //     asset_receiver=holder,
+    //     xfer_asset=self.assetid,
+    //     asset_amount=1,
+    //     fee=0
+    // ).submit()
+    itxn_begin
+    // smart_contracts/nft/contract.py:184
+    // xfer_asset=self.assetid,
+    intc_0 // 0
+    bytec_3 // "assetid"
+    app_global_get_ex
+    assert // check self.assetid exists
+    // smart_contracts/nft/contract.py:185
+    // asset_amount=1,
+    intc_1 // 1
+    itxn_field AssetAmount
+    itxn_field XferAsset
+    frame_dig -2
+    itxn_field AssetReceiver
+    // smart_contracts/nft/contract.py:181-182
+    // # Send the NFT to the holder
+    // itxn.AssetTransfer(
+    intc_2 // axfer
+    itxn_field TypeEnum
+    // smart_contracts/nft/contract.py:186
+    // fee=0
+    intc_0 // 0
+    itxn_field Fee
+    // smart_contracts/nft/contract.py:181-187
+    // # Send the NFT to the holder
+    // itxn.AssetTransfer(
+    //     asset_receiver=holder,
+    //     xfer_asset=self.assetid,
+    //     asset_amount=1,
+    //     fee=0
+    // ).submit()
+    itxn_submit
+    retsub
+
+
+// smart_contracts.nft.contract.NFTRevoke.revoke_access() -> void:
+revoke_access:
+    // smart_contracts/nft/contract.py:191
+    // assert self.access_active == 1, "No active access"
+    intc_0 // 0
+    bytec_0 // "access_active"
+    app_global_get_ex
+    assert // check self.access_active exists
+    intc_1 // 1
+    ==
+    assert // No active access
+    // smart_contracts/nft/contract.py:192
+    // assert Global.latest_timestamp > self.access_expires_at, "Access not yet expired"
+    global LatestTimestamp
+    intc_0 // 0
+    bytec_2 // "access_expires_at"
+    app_global_get_ex
+    assert // check self.access_expires_at exists
+    >
+    assert // Access not yet expired
+    // smart_contracts/nft/contract.py:194-201
+    // # Clawback the NFT from the holder
+    // itxn.AssetTransfer(
+    //     asset_receiver=Global.current_application_address,
+    //     xfer_asset=self.assetid,
+    //     asset_sender=self.access_holder,
+    //     asset_amount=1,
+    //     fee=0
+    // ).submit()
+    itxn_begin
+    // smart_contracts/nft/contract.py:196
+    // asset_receiver=Global.current_application_address,
+    global CurrentApplicationAddress
+    // smart_contracts/nft/contract.py:197
+    // xfer_asset=self.assetid,
+    intc_0 // 0
+    bytec_3 // "assetid"
+    app_global_get_ex
+    assert // check self.assetid exists
+    // smart_contracts/nft/contract.py:198
+    // asset_sender=self.access_holder,
+    intc_0 // 0
+    bytec_1 // "access_holder"
+    app_global_get_ex
+    assert // check self.access_holder exists
+    // smart_contracts/nft/contract.py:199
+    // asset_amount=1,
+    intc_1 // 1
+    itxn_field AssetAmount
+    itxn_field AssetSender
+    itxn_field XferAsset
+    itxn_field AssetReceiver
+    // smart_contracts/nft/contract.py:194-195
+    // # Clawback the NFT from the holder
+    // itxn.AssetTransfer(
+    intc_2 // axfer
+    itxn_field TypeEnum
+    // smart_contracts/nft/contract.py:200
+    // fee=0
+    intc_0 // 0
+    itxn_field Fee
+    // smart_contracts/nft/contract.py:194-201
+    // # Clawback the NFT from the holder
+    // itxn.AssetTransfer(
+    //     asset_receiver=Global.current_application_address,
+    //     xfer_asset=self.assetid,
+    //     asset_sender=self.access_holder,
+    //     asset_amount=1,
+    //     fee=0
+    // ).submit()
+    itxn_submit
+    // smart_contracts/nft/contract.py:203
+    // self.access_active = UInt64(0)
+    bytec_0 // "access_active"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/nft/contract.py:204
+    // self.access_holder = Global.zero_address
+    bytec_1 // "access_holder"
+    global ZeroAddress
+    app_global_put
+    // smart_contracts/nft/contract.py:205
+    // self.access_expires_at = UInt64(0)
+    bytec_2 // "access_expires_at"
+    intc_0 // 0
+    app_global_put
+    retsub
+
+
+// smart_contracts.nft.contract.NFTRevoke.emergency_revoke() -> void:
+emergency_revoke:
+    // smart_contracts/nft/contract.py:210
+    // assert self.access_active == 1, "No active access"
+    intc_0 // 0
+    bytec_0 // "access_active"
+    app_global_get_ex
+    assert // check self.access_active exists
+    intc_1 // 1
+    ==
+    assert // No active access
+    // smart_contracts/nft/contract.py:212-218
+    // itxn.AssetTransfer(
+    //     asset_receiver=Global.current_application_address,
+    //     xfer_asset=self.assetid,
+    //     asset_sender=self.access_holder,
+    //     asset_amount=1,
+    //     fee=0
+    // ).submit()
+    itxn_begin
+    // smart_contracts/nft/contract.py:213
+    // asset_receiver=Global.current_application_address,
+    global CurrentApplicationAddress
+    // smart_contracts/nft/contract.py:214
+    // xfer_asset=self.assetid,
+    intc_0 // 0
+    bytec_3 // "assetid"
+    app_global_get_ex
+    assert // check self.assetid exists
+    // smart_contracts/nft/contract.py:215
+    // asset_sender=self.access_holder,
+    intc_0 // 0
+    bytec_1 // "access_holder"
+    app_global_get_ex
+    assert // check self.access_holder exists
+    // smart_contracts/nft/contract.py:216
+    // asset_amount=1,
+    intc_1 // 1
+    itxn_field AssetAmount
+    itxn_field AssetSender
+    itxn_field XferAsset
+    itxn_field AssetReceiver
+    // smart_contracts/nft/contract.py:212
+    // itxn.AssetTransfer(
+    intc_2 // axfer
+    itxn_field TypeEnum
+    // smart_contracts/nft/contract.py:217
+    // fee=0
+    intc_0 // 0
+    itxn_field Fee
+    // smart_contracts/nft/contract.py:212-218
+    // itxn.AssetTransfer(
+    //     asset_receiver=Global.current_application_address,
+    //     xfer_asset=self.assetid,
+    //     asset_sender=self.access_holder,
+    //     asset_amount=1,
+    //     fee=0
+    // ).submit()
+    itxn_submit
+    // smart_contracts/nft/contract.py:220
+    // self.access_active = UInt64(0)
+    bytec_0 // "access_active"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/nft/contract.py:221
+    // self.access_holder = Global.zero_address
+    bytec_1 // "access_holder"
+    global ZeroAddress
+    app_global_put
+    // smart_contracts/nft/contract.py:222
+    // self.access_expires_at = UInt64(0)
+    bytec_2 // "access_expires_at"
+    intc_0 // 0
+    app_global_put
+    retsub
+
+
+// smart_contracts.nft.contract.NFTRevoke.get_status() -> bytes, uint64, uint64:
+get_status:
+    // smart_contracts/nft/contract.py:227
+    // return self.access_holder, self.access_expires_at, self.access_active
+    intc_0 // 0
+    bytec_1 // "access_holder"
+    app_global_get_ex
+    assert // check self.access_holder exists
+    intc_0 // 0
+    bytec_2 // "access_expires_at"
+    app_global_get_ex
+    assert // check self.access_expires_at exists
+    intc_0 // 0
+    bytec_0 // "access_active"
+    app_global_get_ex
+    assert // check self.access_active exists
+    retsub
