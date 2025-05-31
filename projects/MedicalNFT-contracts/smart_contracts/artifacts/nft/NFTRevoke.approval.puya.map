@@ -3,7 +3,7 @@
   "sources": [
     "../../nft/contract.py"
   ],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAqIA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;AAAA;;AA0FK;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;;AAjBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAlBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AAvCL;;;AAAA;AAAA;;AAAA;;;AAAA;AAuCK;;;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AAvBL;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAuBK;;;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAbL;;;AAAA;AAAA;;AAaK;;;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AANL;;;AAAA;AAAA;;AAMK;;;AAAA;;AAAL;;;AAEQ;AAAA;;AAAA;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;AACA;AAAqB;AAArB;;AAER;;;AAEe;;AAAA;;AAAA;AAAiB;;AAAjB;AAAP;AACA;AAEa;;AACA;;;;;;;;;;AAHb;;;;AAIQ;;;AAJR;;AAOR;;;AAEe;;AAAc;;AAAd;AAAP;AACW;;AAAqD;AAAA;AAAA;AAAA;AAArD;AAAA;;AAAA;;AAAA;;AAAJ;AAAP;AAEO;;AAAA;;AAAmB;;AAAnB;AAAP;AAEO;;AAAA;;AAAiB;;AAAqB;;AAArB;AAAjB;AAAP;AAEA;AAEoB;;AACF;;;;;;;AAHlB;;;AAIQ;;;AAJR;;AAOR;;;AAEe;AAAA;AAAA;AAAA;AAAA;AAAP;AAEA;AAAA;;AAAA;AACyB;;AAAA;;AAAA;AAAzB;AAAA;AAAA;AACA;AAAqB;AAArB;AAGA;AAEe;AAAA;AAAA;AAAA;AACE;;;;;;;;;AAHjB;;;AAIQ;;;AAJR;;AASO;AAAA;AAAA;AAAA;AAAsB;AAAtB;AAAP;AACO;;AAA0B;AAAA;AAAA;AAAA;AAA1B;AAAP;AAGA;AACmB;;AACJ;AAAA;AAAA;AAAA;AACE;AAAA;AAAA;AAAA;AACA;;;;;;;;;AAJjB;;;AAKQ;;;AALR;AAQA;AAAqB;AAArB;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;;AAKO;AAAA;AAAA;AAAA;AAAsB;AAAtB;AAAP;AAEA;AACmB;;AACJ;AAAA;AAAA;AAAA;AACE;AAAA;AAAA;AAAA;AACA;;;;;;;;;AAJjB;;;AAKQ;;;AALR;AAQA;AAAqB;AAArB;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;;AAKO;AAAA;AAAA;AAAA;AAAoB;AAAA;AAAA;AAAA;AAAwB;AAAA;AAAA;AAAA;AAAnD",
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkIA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;AAAA;;AA0FK;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;;AAjBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAlBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AAvCL;;;AAAA;AAAA;;AAAA;;;AAAA;AAuCK;;;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AAvBL;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAuBK;;;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAbL;;;AAAA;AAAA;;AAaK;;;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AANL;;;AAAA;AAAA;;AAMK;;;AAAA;;AAAL;;;AAEQ;AAAA;;AAAA;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;AACA;AAAqB;AAArB;;AAER;;;AAEe;;AAAA;;AAAA;AAAiB;;AAAjB;AAAP;AACA;AAEa;;AACA;;;;;;;;;;AAHb;;;;AAIQ;;;AAJR;;AAOR;;;AAEe;;AAAc;;AAAd;AAAP;AACW;;AAAqD;AAAA;AAAA;AAAA;AAArD;AAAA;;AAAA;;AAAA;;AAAJ;AAAP;AAEO;;AAAA;;AAAmB;;AAAnB;AAAP;AAEO;;AAAA;;AAAiB;;AAAqB;;AAArB;AAAjB;AAAP;AAEA;AAEoB;;AACF;;;;;;;AAHlB;;;AAIQ;;;AAJR;;AAOR;;;AAEe;AAAA;AAAA;AAAA;AAAA;AAAP;AAEA;AAAA;;AAAA;AACA;AAAA;;AAAA;AACA;AAAqB;AAArB;AAGA;AAEe;AAAA;AAAA;AAAA;AACE;;;;;;;;;AAHjB;;;AAIQ;;;AAJR;;AASO;AAAA;AAAA;AAAA;AAAsB;AAAtB;AAAP;AACO;;AAA0B;AAAA;AAAA;AAAA;AAA1B;AAAP;AAGA;AACmB;;AACJ;AAAA;AAAA;AAAA;AACE;AAAA;AAAA;AAAA;AACA;;;;;;;;;AAJjB;;;AAKQ;;;AALR;AAQA;AAAqB;AAArB;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;;AAKO;AAAA;AAAA;AAAA;AAAsB;AAAtB;AAAP;AAEA;AACmB;;AACJ;AAAA;AAAA;AAAA;AACE;AAAA;AAAA;AAAA;AACA;;;;;;;;;AAJjB;;;AAKQ;;;AALR;AAQA;AAAqB;AAArB;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;;AAKO;AAAA;AAAA;AAAA;AAAoB;AAAA;AAAA;AAAA;AAAwB;AAAA;AAAA;AAAA;AAAnD",
   "op_pc_offset": 0,
   "pc_events": {
     "1": {
@@ -1395,7 +1395,7 @@
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.grant_access",
       "params": {
         "holder#0": "bytes",
-        "duration_secs#0": "uint64"
+        "ends_at#0": "uint64"
       },
       "block": "grant_access",
       "stack_in": [],
@@ -1478,63 +1478,36 @@
       "stack_out": []
     },
     "386": {
-      "op": "global LatestTimestamp",
-      "defined_out": [
-        "tmp%1#0"
-      ],
-      "stack_out": [
-        "tmp%1#0"
-      ]
-    },
-    "388": {
-      "op": "frame_dig -1",
-      "defined_out": [
-        "duration_secs#0 (copy)",
-        "tmp%1#0"
-      ],
-      "stack_out": [
-        "tmp%1#0",
-        "duration_secs#0 (copy)"
-      ]
-    },
-    "390": {
-      "op": "+",
-      "defined_out": [
-        "materialized_values%0#0"
-      ],
-      "stack_out": [
-        "materialized_values%0#0"
-      ]
-    },
-    "391": {
       "op": "bytec_2 // \"access_expires_at\"",
       "defined_out": [
-        "\"access_expires_at\"",
-        "materialized_values%0#0"
+        "\"access_expires_at\""
       ],
       "stack_out": [
-        "materialized_values%0#0",
         "\"access_expires_at\""
       ]
     },
-    "392": {
-      "op": "swap",
+    "387": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"access_expires_at\"",
+        "ends_at#0 (copy)"
+      ],
       "stack_out": [
         "\"access_expires_at\"",
-        "materialized_values%0#0"
+        "ends_at#0 (copy)"
       ]
     },
-    "393": {
+    "389": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "394": {
+    "390": {
       "op": "bytec_0 // \"access_active\"",
       "stack_out": [
         "\"access_active\""
       ]
     },
-    "395": {
+    "391": {
       "op": "intc_1 // 1",
       "defined_out": [
         "\"access_active\"",
@@ -1545,20 +1518,20 @@
         "1"
       ]
     },
-    "396": {
+    "392": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "397": {
+    "393": {
       "op": "itxn_begin"
     },
-    "398": {
+    "394": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "399": {
+    "395": {
       "op": "bytec_3 // \"assetid\"",
       "defined_out": [
         "\"assetid\"",
@@ -1569,7 +1542,7 @@
         "\"assetid\""
       ]
     },
-    "400": {
+    "396": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%1#0",
@@ -1580,41 +1553,41 @@
         "maybe_exists%1#0"
       ]
     },
-    "401": {
+    "397": {
       "error": "check self.assetid exists",
       "op": "assert // check self.assetid exists",
       "stack_out": [
         "maybe_value%1#0"
       ]
     },
-    "402": {
+    "398": {
       "op": "intc_1 // 1",
       "stack_out": [
         "maybe_value%1#0",
         "1"
       ]
     },
-    "403": {
+    "399": {
       "op": "itxn_field AssetAmount",
       "stack_out": [
         "maybe_value%1#0"
       ]
     },
-    "405": {
+    "401": {
       "op": "itxn_field XferAsset",
       "stack_out": []
     },
-    "407": {
+    "403": {
       "op": "frame_dig -2",
       "stack_out": [
         "holder#0 (copy)"
       ]
     },
-    "409": {
+    "405": {
       "op": "itxn_field AssetReceiver",
       "stack_out": []
     },
-    "411": {
+    "407": {
       "op": "intc_2 // axfer",
       "defined_out": [
         "axfer"
@@ -1623,28 +1596,28 @@
         "axfer"
       ]
     },
-    "412": {
+    "408": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "414": {
+    "410": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "415": {
+    "411": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "417": {
+    "413": {
       "op": "itxn_submit"
     },
-    "418": {
+    "414": {
       "retsub": true,
       "op": "retsub"
     },
-    "419": {
+    "415": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.revoke_access",
       "params": {},
       "block": "revoke_access",
@@ -1657,7 +1630,7 @@
         "0"
       ]
     },
-    "420": {
+    "416": {
       "op": "bytec_0 // \"access_active\"",
       "defined_out": [
         "\"access_active\"",
@@ -1668,7 +1641,7 @@
         "\"access_active\""
       ]
     },
-    "421": {
+    "417": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -1679,14 +1652,14 @@
         "maybe_exists%0#0"
       ]
     },
-    "422": {
+    "418": {
       "error": "check self.access_active exists",
       "op": "assert // check self.access_active exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "423": {
+    "419": {
       "op": "intc_1 // 1",
       "defined_out": [
         "1",
@@ -1697,7 +1670,7 @@
         "1"
       ]
     },
-    "424": {
+    "420": {
       "op": "==",
       "defined_out": [
         "tmp%0#0"
@@ -1706,12 +1679,12 @@
         "tmp%0#0"
       ]
     },
-    "425": {
+    "421": {
       "error": "No active access",
       "op": "assert // No active access",
       "stack_out": []
     },
-    "426": {
+    "422": {
       "op": "global LatestTimestamp",
       "defined_out": [
         "tmp%1#0"
@@ -1720,14 +1693,14 @@
         "tmp%1#0"
       ]
     },
-    "428": {
+    "424": {
       "op": "intc_0 // 0",
       "stack_out": [
         "tmp%1#0",
         "0"
       ]
     },
-    "429": {
+    "425": {
       "op": "bytec_2 // \"access_expires_at\"",
       "defined_out": [
         "\"access_expires_at\"",
@@ -1740,7 +1713,7 @@
         "\"access_expires_at\""
       ]
     },
-    "430": {
+    "426": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%1#0",
@@ -1753,7 +1726,7 @@
         "maybe_exists%1#0"
       ]
     },
-    "431": {
+    "427": {
       "error": "check self.access_expires_at exists",
       "op": "assert // check self.access_expires_at exists",
       "stack_out": [
@@ -1761,7 +1734,7 @@
         "maybe_value%1#0"
       ]
     },
-    "432": {
+    "428": {
       "op": ">",
       "defined_out": [
         "tmp%2#0"
@@ -1770,15 +1743,15 @@
         "tmp%2#0"
       ]
     },
-    "433": {
+    "429": {
       "error": "Access not yet expired",
       "op": "assert // Access not yet expired",
       "stack_out": []
     },
-    "434": {
+    "430": {
       "op": "itxn_begin"
     },
-    "435": {
+    "431": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
@@ -1787,14 +1760,14 @@
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "437": {
+    "433": {
       "op": "intc_0 // 0",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
         "0"
       ]
     },
-    "438": {
+    "434": {
       "op": "bytec_3 // \"assetid\"",
       "defined_out": [
         "\"assetid\"",
@@ -1807,7 +1780,7 @@
         "\"assetid\""
       ]
     },
-    "439": {
+    "435": {
       "op": "app_global_get_ex",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1820,7 +1793,7 @@
         "maybe_exists%2#0"
       ]
     },
-    "440": {
+    "436": {
       "error": "check self.assetid exists",
       "op": "assert // check self.assetid exists",
       "stack_out": [
@@ -1828,7 +1801,7 @@
         "maybe_value%2#0"
       ]
     },
-    "441": {
+    "437": {
       "op": "intc_0 // 0",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1836,7 +1809,7 @@
         "0"
       ]
     },
-    "442": {
+    "438": {
       "op": "bytec_1 // \"access_holder\"",
       "defined_out": [
         "\"access_holder\"",
@@ -1851,7 +1824,7 @@
         "\"access_holder\""
       ]
     },
-    "443": {
+    "439": {
       "op": "app_global_get_ex",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1866,7 +1839,7 @@
         "maybe_exists%3#0"
       ]
     },
-    "444": {
+    "440": {
       "error": "check self.access_holder exists",
       "op": "assert // check self.access_holder exists",
       "stack_out": [
@@ -1875,7 +1848,7 @@
         "maybe_value%3#0"
       ]
     },
-    "445": {
+    "441": {
       "op": "intc_1 // 1",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1884,7 +1857,7 @@
         "1"
       ]
     },
-    "446": {
+    "442": {
       "op": "itxn_field AssetAmount",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1892,24 +1865,24 @@
         "maybe_value%3#0"
       ]
     },
-    "448": {
+    "444": {
       "op": "itxn_field AssetSender",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
         "maybe_value%2#0"
       ]
     },
-    "450": {
+    "446": {
       "op": "itxn_field XferAsset",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "452": {
+    "448": {
       "op": "itxn_field AssetReceiver",
       "stack_out": []
     },
-    "454": {
+    "450": {
       "op": "intc_2 // axfer",
       "defined_out": [
         "axfer"
@@ -1918,47 +1891,47 @@
         "axfer"
       ]
     },
-    "455": {
+    "451": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "457": {
+    "453": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "458": {
+    "454": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "460": {
+    "456": {
       "op": "itxn_submit"
     },
-    "461": {
+    "457": {
       "op": "bytec_0 // \"access_active\"",
       "stack_out": [
         "\"access_active\""
       ]
     },
-    "462": {
+    "458": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"access_active\"",
         "0"
       ]
     },
-    "463": {
+    "459": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "464": {
+    "460": {
       "op": "bytec_1 // \"access_holder\"",
       "stack_out": [
         "\"access_holder\""
       ]
     },
-    "465": {
+    "461": {
       "op": "global ZeroAddress",
       "defined_out": [
         "\"access_holder\"",
@@ -1969,32 +1942,32 @@
         "materialized_values%0#0"
       ]
     },
-    "467": {
+    "463": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "468": {
+    "464": {
       "op": "bytec_2 // \"access_expires_at\"",
       "stack_out": [
         "\"access_expires_at\""
       ]
     },
-    "469": {
+    "465": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"access_expires_at\"",
         "0"
       ]
     },
-    "470": {
+    "466": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "471": {
+    "467": {
       "retsub": true,
       "op": "retsub"
     },
-    "472": {
+    "468": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.emergency_revoke",
       "params": {},
       "block": "emergency_revoke",
@@ -2007,7 +1980,7 @@
         "0"
       ]
     },
-    "473": {
+    "469": {
       "op": "bytec_0 // \"access_active\"",
       "defined_out": [
         "\"access_active\"",
@@ -2018,7 +1991,7 @@
         "\"access_active\""
       ]
     },
-    "474": {
+    "470": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -2029,14 +2002,14 @@
         "maybe_exists%0#0"
       ]
     },
-    "475": {
+    "471": {
       "error": "check self.access_active exists",
       "op": "assert // check self.access_active exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "476": {
+    "472": {
       "op": "intc_1 // 1",
       "defined_out": [
         "1",
@@ -2047,7 +2020,7 @@
         "1"
       ]
     },
-    "477": {
+    "473": {
       "op": "==",
       "defined_out": [
         "tmp%0#0"
@@ -2056,15 +2029,15 @@
         "tmp%0#0"
       ]
     },
-    "478": {
+    "474": {
       "error": "No active access",
       "op": "assert // No active access",
       "stack_out": []
     },
-    "479": {
+    "475": {
       "op": "itxn_begin"
     },
-    "480": {
+    "476": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
@@ -2073,14 +2046,14 @@
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "482": {
+    "478": {
       "op": "intc_0 // 0",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
         "0"
       ]
     },
-    "483": {
+    "479": {
       "op": "bytec_3 // \"assetid\"",
       "defined_out": [
         "\"assetid\"",
@@ -2093,7 +2066,7 @@
         "\"assetid\""
       ]
     },
-    "484": {
+    "480": {
       "op": "app_global_get_ex",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2106,7 +2079,7 @@
         "maybe_exists%1#0"
       ]
     },
-    "485": {
+    "481": {
       "error": "check self.assetid exists",
       "op": "assert // check self.assetid exists",
       "stack_out": [
@@ -2114,7 +2087,7 @@
         "maybe_value%1#0"
       ]
     },
-    "486": {
+    "482": {
       "op": "intc_0 // 0",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2122,7 +2095,7 @@
         "0"
       ]
     },
-    "487": {
+    "483": {
       "op": "bytec_1 // \"access_holder\"",
       "defined_out": [
         "\"access_holder\"",
@@ -2137,7 +2110,7 @@
         "\"access_holder\""
       ]
     },
-    "488": {
+    "484": {
       "op": "app_global_get_ex",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2152,7 +2125,7 @@
         "maybe_exists%2#0"
       ]
     },
-    "489": {
+    "485": {
       "error": "check self.access_holder exists",
       "op": "assert // check self.access_holder exists",
       "stack_out": [
@@ -2161,7 +2134,7 @@
         "maybe_value%2#0"
       ]
     },
-    "490": {
+    "486": {
       "op": "intc_1 // 1",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2170,7 +2143,7 @@
         "1"
       ]
     },
-    "491": {
+    "487": {
       "op": "itxn_field AssetAmount",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2178,24 +2151,24 @@
         "maybe_value%2#0"
       ]
     },
-    "493": {
+    "489": {
       "op": "itxn_field AssetSender",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
         "maybe_value%1#0"
       ]
     },
-    "495": {
+    "491": {
       "op": "itxn_field XferAsset",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "497": {
+    "493": {
       "op": "itxn_field AssetReceiver",
       "stack_out": []
     },
-    "499": {
+    "495": {
       "op": "intc_2 // axfer",
       "defined_out": [
         "axfer"
@@ -2204,47 +2177,47 @@
         "axfer"
       ]
     },
-    "500": {
+    "496": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "502": {
+    "498": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "503": {
+    "499": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "505": {
+    "501": {
       "op": "itxn_submit"
     },
-    "506": {
+    "502": {
       "op": "bytec_0 // \"access_active\"",
       "stack_out": [
         "\"access_active\""
       ]
     },
-    "507": {
+    "503": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"access_active\"",
         "0"
       ]
     },
-    "508": {
+    "504": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "509": {
+    "505": {
       "op": "bytec_1 // \"access_holder\"",
       "stack_out": [
         "\"access_holder\""
       ]
     },
-    "510": {
+    "506": {
       "op": "global ZeroAddress",
       "defined_out": [
         "\"access_holder\"",
@@ -2255,11 +2228,11 @@
         "materialized_values%0#0"
       ]
     },
-    "512": {
+    "508": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "513": {
+    "509": {
       "op": "bytec_2 // \"access_expires_at\"",
       "defined_out": [
         "\"access_expires_at\""
@@ -2268,22 +2241,22 @@
         "\"access_expires_at\""
       ]
     },
-    "514": {
+    "510": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"access_expires_at\"",
         "0"
       ]
     },
-    "515": {
+    "511": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "516": {
+    "512": {
       "retsub": true,
       "op": "retsub"
     },
-    "517": {
+    "513": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.get_status",
       "params": {},
       "block": "get_status",
@@ -2296,7 +2269,7 @@
         "0"
       ]
     },
-    "518": {
+    "514": {
       "op": "bytec_1 // \"access_holder\"",
       "defined_out": [
         "\"access_holder\"",
@@ -2307,7 +2280,7 @@
         "\"access_holder\""
       ]
     },
-    "519": {
+    "515": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -2318,21 +2291,21 @@
         "maybe_exists%0#0"
       ]
     },
-    "520": {
+    "516": {
       "error": "check self.access_holder exists",
       "op": "assert // check self.access_holder exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "521": {
+    "517": {
       "op": "intc_0 // 0",
       "stack_out": [
         "maybe_value%0#0",
         "0"
       ]
     },
-    "522": {
+    "518": {
       "op": "bytec_2 // \"access_expires_at\"",
       "defined_out": [
         "\"access_expires_at\"",
@@ -2345,7 +2318,7 @@
         "\"access_expires_at\""
       ]
     },
-    "523": {
+    "519": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%1#0",
@@ -2358,7 +2331,7 @@
         "maybe_exists%1#0"
       ]
     },
-    "524": {
+    "520": {
       "error": "check self.access_expires_at exists",
       "op": "assert // check self.access_expires_at exists",
       "stack_out": [
@@ -2366,7 +2339,7 @@
         "maybe_value%1#0"
       ]
     },
-    "525": {
+    "521": {
       "op": "intc_0 // 0",
       "stack_out": [
         "maybe_value%0#0",
@@ -2374,7 +2347,7 @@
         "0"
       ]
     },
-    "526": {
+    "522": {
       "op": "bytec_0 // \"access_active\"",
       "defined_out": [
         "\"access_active\"",
@@ -2389,7 +2362,7 @@
         "\"access_active\""
       ]
     },
-    "527": {
+    "523": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%2#0",
@@ -2404,7 +2377,7 @@
         "maybe_exists%2#0"
       ]
     },
-    "528": {
+    "524": {
       "error": "check self.access_active exists",
       "op": "assert // check self.access_active exists",
       "stack_out": [
@@ -2413,7 +2386,7 @@
         "maybe_value%2#0"
       ]
     },
-    "529": {
+    "525": {
       "retsub": true,
       "op": "retsub"
     }

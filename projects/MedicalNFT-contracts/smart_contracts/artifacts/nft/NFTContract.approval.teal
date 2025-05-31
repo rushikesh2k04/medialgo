@@ -20,7 +20,7 @@ main_after_if_else@10:
     return
 
 main_asset_transfer_from_app_route@6:
-    // smart_contracts/nft/contract.py:45-46
+    // smart_contracts/nft/contract.py:42-43
     // # example: ASSET_TRANSFER
     // @abimethod
     txn OnCompletion
@@ -36,7 +36,7 @@ main_asset_transfer_from_app_route@6:
     txna ApplicationArgs 2
     btoi
     txnas Accounts
-    // smart_contracts/nft/contract.py:45-46
+    // smart_contracts/nft/contract.py:42-43
     // # example: ASSET_TRANSFER
     // @abimethod
     callsub asset_transfer_from_app
@@ -44,7 +44,7 @@ main_asset_transfer_from_app_route@6:
     return
 
 main_asset_opt_in_sender_route@5:
-    // smart_contracts/nft/contract.py:34
+    // smart_contracts/nft/contract.py:31
     // @abimethod
     txn OnCompletion
     !
@@ -56,14 +56,14 @@ main_asset_opt_in_sender_route@5:
     txna ApplicationArgs 1
     btoi
     txnas Assets
-    // smart_contracts/nft/contract.py:34
+    // smart_contracts/nft/contract.py:31
     // @abimethod
     callsub asset_opt_in_sender
     intc_1 // 1
     return
 
 main_opt_in_to_asset_route@4:
-    // smart_contracts/nft/contract.py:17-18
+    // smart_contracts/nft/contract.py:14-15
     //  # opt in to the asset into the smart contract
     // @abimethod()
     txn OnCompletion
@@ -81,7 +81,7 @@ main_opt_in_to_asset_route@4:
     intc_1 // pay
     ==
     assert // transaction type is pay
-    // smart_contracts/nft/contract.py:17-18
+    // smart_contracts/nft/contract.py:14-15
     //  # opt in to the asset into the smart contract
     // @abimethod()
     callsub opt_in_to_asset
@@ -89,7 +89,7 @@ main_opt_in_to_asset_route@4:
     return
 
 main_create_application_route@3:
-    // smart_contracts/nft/contract.py:12-13
+    // smart_contracts/nft/contract.py:9-10
     // #create the app
     // @abimethod(allow_actions=["NoOp"], create="require")
     txn OnCompletion
@@ -103,7 +103,7 @@ main_create_application_route@3:
     txna ApplicationArgs 1
     btoi
     txnas Assets
-    // smart_contracts/nft/contract.py:12-13
+    // smart_contracts/nft/contract.py:9-10
     // #create the app
     // @abimethod(allow_actions=["NoOp"], create="require")
     callsub create_application
@@ -113,12 +113,12 @@ main_create_application_route@3:
 
 // smart_contracts.nft.contract.NFTContract.create_application(asset_id: uint64) -> void:
 create_application:
-    // smart_contracts/nft/contract.py:12-14
+    // smart_contracts/nft/contract.py:9-11
     // #create the app
     // @abimethod(allow_actions=["NoOp"], create="require")
     // def create_application(self, asset_id: Asset) -> None:
     proto 1 0
-    // smart_contracts/nft/contract.py:15
+    // smart_contracts/nft/contract.py:12
     // self.assetid = asset_id.id
     bytec_0 // "assetid"
     frame_dig -1
@@ -128,18 +128,18 @@ create_application:
 
 // smart_contracts.nft.contract.NFTContract.opt_in_to_asset(mbrpay: uint64) -> void:
 opt_in_to_asset:
-    // smart_contracts/nft/contract.py:17-19
+    // smart_contracts/nft/contract.py:14-16
     //  # opt in to the asset into the smart contract
     // @abimethod()
     // def opt_in_to_asset(self, mbrpay: gtxn.PaymentTransaction) -> None:
     proto 1 0
-    // smart_contracts/nft/contract.py:20
+    // smart_contracts/nft/contract.py:17
     // assert Txn.sender == Global.creator_address
     txn Sender
     global CreatorAddress
     ==
     assert
-    // smart_contracts/nft/contract.py:21
+    // smart_contracts/nft/contract.py:18
     // assert not Global.current_application_address.is_opted_in(Asset(self.assetid))
     global CurrentApplicationAddress
     intc_0 // 0
@@ -152,14 +152,14 @@ opt_in_to_asset:
     bury 1
     !
     assert
-    // smart_contracts/nft/contract.py:23
+    // smart_contracts/nft/contract.py:20
     // assert mbrpay.receiver == Global.current_application_address
     frame_dig -1
     gtxns Receiver
     global CurrentApplicationAddress
     ==
     assert
-    // smart_contracts/nft/contract.py:25
+    // smart_contracts/nft/contract.py:22
     // assert mbrpay.amount == Global.min_balance + Global.asset_opt_in_min_balance
     frame_dig -1
     gtxns Amount
@@ -168,7 +168,7 @@ opt_in_to_asset:
     +
     ==
     assert
-    // smart_contracts/nft/contract.py:27-32
+    // smart_contracts/nft/contract.py:24-29
     // itxn.AssetTransfer(
     //     xfer_asset= self.assetid,
     //     asset_receiver= Global.current_application_address,
@@ -176,24 +176,24 @@ opt_in_to_asset:
     //     fee=0,
     // ).submit()
     itxn_begin
-    // smart_contracts/nft/contract.py:29
+    // smart_contracts/nft/contract.py:26
     // asset_receiver= Global.current_application_address,
     global CurrentApplicationAddress
-    // smart_contracts/nft/contract.py:30
+    // smart_contracts/nft/contract.py:27
     // asset_amount= 0,
     intc_0 // 0
     itxn_field AssetAmount
     itxn_field AssetReceiver
     itxn_field XferAsset
-    // smart_contracts/nft/contract.py:27
+    // smart_contracts/nft/contract.py:24
     // itxn.AssetTransfer(
     intc_2 // axfer
     itxn_field TypeEnum
-    // smart_contracts/nft/contract.py:31
+    // smart_contracts/nft/contract.py:28
     // fee=0,
     intc_0 // 0
     itxn_field Fee
-    // smart_contracts/nft/contract.py:27-32
+    // smart_contracts/nft/contract.py:24-29
     // itxn.AssetTransfer(
     //     xfer_asset= self.assetid,
     //     asset_receiver= Global.current_application_address,
@@ -206,11 +206,11 @@ opt_in_to_asset:
 
 // smart_contracts.nft.contract.NFTContract.asset_opt_in_sender(asset: uint64) -> void:
 asset_opt_in_sender:
-    // smart_contracts/nft/contract.py:34-35
+    // smart_contracts/nft/contract.py:31-32
     // @abimethod
     // def asset_opt_in_sender(self, asset: Asset) -> None:
     proto 1 0
-    // smart_contracts/nft/contract.py:37-42
+    // smart_contracts/nft/contract.py:34-39
     // itxn.AssetTransfer(
     //     asset_receiver=Txn.sender,
     //     xfer_asset=asset,
@@ -218,25 +218,25 @@ asset_opt_in_sender:
     //     fee=0,
     // ).submit()
     itxn_begin
-    // smart_contracts/nft/contract.py:38
+    // smart_contracts/nft/contract.py:35
     // asset_receiver=Txn.sender,
     txn Sender
-    // smart_contracts/nft/contract.py:40
+    // smart_contracts/nft/contract.py:37
     // asset_amount=0,
     intc_0 // 0
     itxn_field AssetAmount
     frame_dig -1
     itxn_field XferAsset
     itxn_field AssetReceiver
-    // smart_contracts/nft/contract.py:37
+    // smart_contracts/nft/contract.py:34
     // itxn.AssetTransfer(
     intc_2 // axfer
     itxn_field TypeEnum
-    // smart_contracts/nft/contract.py:41
+    // smart_contracts/nft/contract.py:38
     // fee=0,
     intc_0 // 0
     itxn_field Fee
-    // smart_contracts/nft/contract.py:37-42
+    // smart_contracts/nft/contract.py:34-39
     // itxn.AssetTransfer(
     //     asset_receiver=Txn.sender,
     //     xfer_asset=asset,
@@ -249,12 +249,12 @@ asset_opt_in_sender:
 
 // smart_contracts.nft.contract.NFTContract.asset_transfer_from_app(asset: uint64, receiver: bytes) -> void:
 asset_transfer_from_app:
-    // smart_contracts/nft/contract.py:45-47
+    // smart_contracts/nft/contract.py:42-44
     // # example: ASSET_TRANSFER
     // @abimethod
     // def asset_transfer_from_app(self, asset: Asset, receiver: Account ) -> None:
     proto 2 0
-    // smart_contracts/nft/contract.py:48-54
+    // smart_contracts/nft/contract.py:45-51
     // itxn.AssetTransfer(
     //     sender = Global.current_application_address,
     //     asset_receiver = receiver,
@@ -263,10 +263,10 @@ asset_transfer_from_app:
     //     fee=0,
     // ).submit()
     itxn_begin
-    // smart_contracts/nft/contract.py:49
+    // smart_contracts/nft/contract.py:46
     // sender = Global.current_application_address,
     global CurrentApplicationAddress
-    // smart_contracts/nft/contract.py:52
+    // smart_contracts/nft/contract.py:49
     // asset_amount = 1,
     intc_1 // 1
     itxn_field AssetAmount
@@ -275,15 +275,15 @@ asset_transfer_from_app:
     frame_dig -1
     itxn_field AssetReceiver
     itxn_field Sender
-    // smart_contracts/nft/contract.py:48
+    // smart_contracts/nft/contract.py:45
     // itxn.AssetTransfer(
     intc_2 // axfer
     itxn_field TypeEnum
-    // smart_contracts/nft/contract.py:53
+    // smart_contracts/nft/contract.py:50
     // fee=0,
     intc_0 // 0
     itxn_field Fee
-    // smart_contracts/nft/contract.py:48-54
+    // smart_contracts/nft/contract.py:45-51
     // itxn.AssetTransfer(
     //     sender = Global.current_application_address,
     //     asset_receiver = receiver,

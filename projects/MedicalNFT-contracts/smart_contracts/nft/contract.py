@@ -1,13 +1,10 @@
 from algopy import *
-
+import algopy.arc4
 from algopy.arc4 import abimethod
 
 
 class NFTContract(ARC4Contract):
     assetid: UInt64
-    access_holder: Account
-    access_expires_at: UInt64
-    access_active: UInt64
 
     #create the app
     @abimethod(allow_actions=["NoOp"], create="require")
@@ -171,11 +168,11 @@ class NFTRevoke(ARC4Contract):
         ).submit()
 
     @abimethod()
-    def grant_access(self, holder: Account, duration_secs: UInt64) -> None:
+    def grant_access(self, holder: Account, ends_at: UInt64) -> None:
         assert self.access_active == 0, "Access already active"
 
         self.access_holder = holder
-        self.access_expires_at = Global.latest_timestamp + duration_secs
+        self.access_expires_at = ends_at
         self.access_active = UInt64(1)
 
         # Send the NFT to the holder
