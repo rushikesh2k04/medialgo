@@ -1,7 +1,15 @@
 import { SupportedWallet, WalletId, WalletManager, WalletProvider } from '@txnlab/use-wallet-react'
 import { SnackbarProvider } from 'notistack'
+import React from 'react'
 import Home from './Home'
 import { getAlgodConfigFromViteEnvironment, getKmdConfigFromViteEnvironment } from './utils/network/getAlgoClientConfigs'
+import { UserProvider, useUser } from './contexts/UserContext'
+
+// Import dashboards for each role
+import DoctorDashboard from './components/doctor/Dashboard'
+import PatientDashboard from './components/patient/Dashboard'
+import PharmacyDashboard from './components/pharmacy/Dashboard'
+import ProfileForm from './components/common/ProfileForm'
 
 let supportedWallets: SupportedWallet[]
 if (import.meta.env.VITE_ALGOD_NETWORK === 'localnet') {
@@ -21,35 +29,59 @@ if (import.meta.env.VITE_ALGOD_NETWORK === 'localnet') {
     { id: WalletId.DEFLY },
     { id: WalletId.PERA },
     { id: WalletId.EXODUS },
-    // If you are interested in WalletConnect v2 provider
-    // refer to https://github.com/TxnLab/use-wallet for detailed integration instructions
+    // Add more wallets if needed
   ]
 }
 
-export default function App() {
-  const algodConfig = getAlgodConfigFromViteEnvironment()
+const algodConfig = getAlgodConfigFromViteEnvironment()
 
-  const walletManager = new WalletManager({
-    wallets: supportedWallets,
-    defaultNetwork: algodConfig.network,
-    networks: {
-      [algodConfig.network]: {
-        algod: {
-          baseServer: algodConfig.server,
-          port: algodConfig.port,
-          token: String(algodConfig.token),
-        },
+const walletManager = new WalletManager({
+  wallets: supportedWallets,
+  defaultNetwork: algodConfig.network,
+  networks: {
+    [algodConfig.network]: {
+      algod: {
+        baseServer: algodConfig.server,
+        port: algodConfig.port,
+        token: String(algodConfig.token),
       },
     },
-    options: {
-      resetNetwork: true,
-    },
-  })
+  },
+  options: {
+    resetNetwork: true,
+  },
+})
 
+// Role-based main router
+const MainRouter = () => {
+  const { role, profile } = useUser()
+
+  // If no role, show Home (wallet connect + role select)
+  if (!role) return <Home />
+
+  // If no profile, show profile form
+  if (!profile) return <ProfileForm onComplete={() => {}} />
+
+  // Route to the correct dashboard
+  switch (role) {
+    case 'doctor':
+      return <DoctorDashboard />
+    case 'patient':
+      return <PatientDashboard />
+    case 'pharmacy':
+      return <PharmacyDashboard />
+    default:
+      return <div>Unknown role</div>
+  }
+}
+
+export default function App() {
   return (
     <SnackbarProvider maxSnack={3}>
       <WalletProvider manager={walletManager}>
-        <Home />
+        <UserProvider>
+          <MainRouter />
+        </UserProvider>
       </WalletProvider>
     </SnackbarProvider>
   )
