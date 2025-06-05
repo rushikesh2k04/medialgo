@@ -222,3 +222,13 @@ class NFTRevoke(ARC4Contract):
     def get_status(self) -> tuple[Account, UInt64, UInt64]:
         """Returns (current holder, expiry time, active flag)"""
         return self.access_holder, self.access_expires_at, self.access_active
+    @abimethod
+    def asset_transfer_from_app(self, asset: Asset, receiver: Account ) -> None:
+        assert asset.manager == Txn.sender
+        itxn.AssetTransfer(
+            sender = Global.current_application_address,
+            asset_receiver = receiver,
+            xfer_asset = asset,
+            asset_amount = 1,
+            fee=0,
+        ).submit()

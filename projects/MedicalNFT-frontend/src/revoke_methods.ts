@@ -114,6 +114,8 @@ export function emergency_revoke(
     try {
       const result = await revokeclient.send.emergencyRevoke({ args: [], sender: sender, assetReferences: [assetId] });
       console.log("Revoke is successful", result);
+      const transferresult = await revokeclient.send.assetTransferFromApp({ args: [assetId, sender], sender: sender, assetReferences: [assetId] });
+      console.log("Transfered the asset to manager address:", transferresult);
     } catch (err) {
       console.log(err);
     }

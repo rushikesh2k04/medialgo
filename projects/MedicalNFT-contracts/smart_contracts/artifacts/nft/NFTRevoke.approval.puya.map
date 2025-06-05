@@ -3,7 +3,7 @@
   "sources": [
     "../../nft/contract.py"
   ],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkIA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;AAAA;;AA0FK;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;;AAjBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAlBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AAvCL;;;AAAA;AAAA;;AAAA;;;AAAA;AAuCK;;;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AAvBL;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAuBK;;;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAbL;;;AAAA;AAAA;;AAaK;;;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AANL;;;AAAA;AAAA;;AAMK;;;AAAA;;AAAL;;;AAEQ;AAAA;;AAAA;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;AACA;AAAqB;AAArB;;AAER;;;AAEe;;AAAA;;AAAA;AAAiB;;AAAjB;AAAP;AACA;AAEa;;AACA;;;;;;;;;;AAHb;;;;AAIQ;;;AAJR;;AAOR;;;AAEe;;AAAc;;AAAd;AAAP;AACW;;AAAqD;AAAA;AAAA;AAAA;AAArD;AAAA;;AAAA;;AAAA;;AAAJ;AAAP;AAEO;;AAAA;;AAAmB;;AAAnB;AAAP;AAEO;;AAAA;;AAAiB;;AAAqB;;AAArB;AAAjB;AAAP;AAEA;AAEoB;;AACF;;;;;;;AAHlB;;;AAIQ;;;AAJR;;AAOR;;;AAEe;AAAA;AAAA;AAAA;AAAA;AAAP;AAEA;AAAA;;AAAA;AACA;AAAA;;AAAA;AACA;AAAqB;AAArB;AAGA;AAEe;AAAA;AAAA;AAAA;AACE;;;;;;;;;AAHjB;;;AAIQ;;;AAJR;;AASO;AAAA;AAAA;AAAA;AAAsB;AAAtB;AAAP;AACO;;AAA0B;AAAA;AAAA;AAAA;AAA1B;AAAP;AAGA;AACmB;;AACJ;AAAA;AAAA;AAAA;AACE;AAAA;AAAA;AAAA;AACA;;;;;;;;;AAJjB;;;AAKQ;;;AALR;AAQA;AAAqB;AAArB;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;;AAKO;AAAA;AAAA;AAAA;AAAsB;AAAtB;AAAP;AAEA;AACmB;;AACJ;AAAA;AAAA;AAAA;AACE;AAAA;AAAA;AAAA;AACA;;;;;;;;;AAJjB;;;AAKQ;;;AALR;AAQA;AAAqB;AAArB;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;;AAKO;AAAA;AAAA;AAAA;AAAoB;AAAA;AAAA;AAAA;AAAwB;AAAA;AAAA;AAAA;AAAnD",
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkIA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;AAAA;;AA8FK;;AAAA;AAAA;AAAA;;AAAA;AA9FL;;;AAAA;AAAA;;AAAA;;;AAAA;AAAA;;AA8FK;;;AAAA;;AAJA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;;AAjBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAlBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AAvCL;;;AAAA;AAAA;;AAAA;;;AAAA;AAuCK;;;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AAvBL;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAuBK;;;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAbL;;;AAAA;AAAA;;AAaK;;;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AANL;;;AAAA;AAAA;;AAMK;;;AAAA;;AAAL;;;AAEQ;AAAA;;AAAA;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;AACA;AAAqB;AAArB;;AAER;;;AAEe;;AAAA;;AAAA;AAAiB;;AAAjB;AAAP;AACA;AAEa;;AACA;;;;;;;;;;AAHb;;;;AAIQ;;;AAJR;;AAOR;;;AAEe;;AAAc;;AAAd;AAAP;AACW;;AAAqD;AAAA;AAAA;AAAA;AAArD;AAAA;;AAAA;;AAAA;;AAAJ;AAAP;AAEO;;AAAA;;AAAmB;;AAAnB;AAAP;AAEO;;AAAA;;AAAiB;;AAAqB;;AAArB;AAAjB;AAAP;AAEA;AAEoB;;AACF;;;;;;;AAHlB;;;AAIQ;;;AAJR;;AAOR;;;AAEe;AAAA;AAAA;AAAA;AAAA;AAAP;AAEA;AAAA;;AAAA;AACA;AAAA;;AAAA;AACA;AAAqB;AAArB;AAGA;AAEe;AAAA;AAAA;AAAA;AACE;;;;;;;;;AAHjB;;;AAIQ;;;AAJR;;AASO;AAAA;AAAA;AAAA;AAAsB;AAAtB;AAAP;AACO;;AAA0B;AAAA;AAAA;AAAA;AAA1B;AAAP;AAGA;AACmB;;AACJ;AAAA;AAAA;AAAA;AACE;AAAA;AAAA;AAAA;AACA;;;;;;;;;AAJjB;;;AAKQ;;;AALR;AAQA;AAAqB;AAArB;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;;AAKO;AAAA;AAAA;AAAA;AAAsB;AAAtB;AAAP;AAEA;AACmB;;AACJ;AAAA;AAAA;AAAA;AACE;AAAA;AAAA;AAAA;AACA;;;;;;;;;AAJjB;;;AAKQ;;;AALR;AAQA;AAAqB;AAArB;AACA;AAAqB;;AAArB;AACA;AAAyB;AAAzB;;AAKO;AAAA;AAAA;AAAA;AAAoB;AAAA;AAAA;AAAA;AAAwB;AAAA;AAAA;AAAA;AAAnD;AACR;;;AAEe;;AAAA;;AAAA;AAAiB;;AAAjB;AAAP;AACA;AACa;;AAGM;;;;;;;;;;;;;AAJnB;;;AAKQ;;;AALR;",
   "op_pc_offset": 0,
   "pc_events": {
     "1": {
@@ -26,13 +26,14 @@
       ]
     },
     "64": {
-      "op": "bz main_after_if_else@13",
+      "op": "bz main_after_if_else@14",
       "stack_out": []
     },
     "67": {
-      "op": "pushbytess 0x3cf31b31 0x55d4c4c3 0x1574535a 0x6afe79a8 0xf4c32aea 0xeb0fc35c 0x36df361a // method \"create_application(asset)void\", method \"asset_config_clawback(asset)void\", method \"opt_in_to_asset(pay)void\", method \"grant_access(account,uint64)void\", method \"revoke_access()void\", method \"emergency_revoke()void\", method \"get_status()(address,uint64,uint64)\"",
+      "op": "pushbytess 0x3cf31b31 0x55d4c4c3 0x1574535a 0x6afe79a8 0xf4c32aea 0xeb0fc35c 0x36df361a 0xeb7c63ff // method \"create_application(asset)void\", method \"asset_config_clawback(asset)void\", method \"opt_in_to_asset(pay)void\", method \"grant_access(account,uint64)void\", method \"revoke_access()void\", method \"emergency_revoke()void\", method \"get_status()(address,uint64,uint64)\", method \"asset_transfer_from_app(asset,account)void\"",
       "defined_out": [
         "Method(asset_config_clawback(asset)void)",
+        "Method(asset_transfer_from_app(asset,account)void)",
         "Method(create_application(asset)void)",
         "Method(emergency_revoke()void)",
         "Method(get_status()(address,uint64,uint64))",
@@ -47,13 +48,15 @@
         "Method(grant_access(account,uint64)void)",
         "Method(revoke_access()void)",
         "Method(emergency_revoke()void)",
-        "Method(get_status()(address,uint64,uint64))"
+        "Method(get_status()(address,uint64,uint64))",
+        "Method(asset_transfer_from_app(asset,account)void)"
       ]
     },
-    "104": {
+    "109": {
       "op": "txna ApplicationArgs 0",
       "defined_out": [
         "Method(asset_config_clawback(asset)void)",
+        "Method(asset_transfer_from_app(asset,account)void)",
         "Method(create_application(asset)void)",
         "Method(emergency_revoke()void)",
         "Method(get_status()(address,uint64,uint64))",
@@ -70,15 +73,16 @@
         "Method(revoke_access()void)",
         "Method(emergency_revoke()void)",
         "Method(get_status()(address,uint64,uint64))",
+        "Method(asset_transfer_from_app(asset,account)void)",
         "tmp%2#0"
       ]
     },
-    "107": {
-      "op": "match main_create_application_route@3 main_asset_config_clawback_route@4 main_opt_in_to_asset_route@5 main_grant_access_route@6 main_revoke_access_route@7 main_emergency_revoke_route@8 main_get_status_route@9",
+    "112": {
+      "op": "match main_create_application_route@3 main_asset_config_clawback_route@4 main_opt_in_to_asset_route@5 main_grant_access_route@6 main_revoke_access_route@7 main_emergency_revoke_route@8 main_get_status_route@9 main_asset_transfer_from_app_route@10",
       "stack_out": []
     },
-    "123": {
-      "block": "main_after_if_else@13",
+    "130": {
+      "block": "main_after_if_else@14",
       "stack_in": [],
       "op": "intc_0 // 0",
       "defined_out": [
@@ -88,11 +92,128 @@
         "tmp%0#0"
       ]
     },
-    "124": {
+    "131": {
       "op": "return",
       "stack_out": []
     },
-    "125": {
+    "132": {
+      "block": "main_asset_transfer_from_app_route@10",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%40#0"
+      ],
+      "stack_out": [
+        "tmp%40#0"
+      ]
+    },
+    "134": {
+      "op": "!",
+      "defined_out": [
+        "tmp%41#0"
+      ],
+      "stack_out": [
+        "tmp%41#0"
+      ]
+    },
+    "135": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "136": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%42#0"
+      ],
+      "stack_out": [
+        "tmp%42#0"
+      ]
+    },
+    "138": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "139": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "reinterpret_bytes[1]%3#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[1]%3#0"
+      ]
+    },
+    "142": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%44#0"
+      ],
+      "stack_out": [
+        "tmp%44#0"
+      ]
+    },
+    "143": {
+      "op": "txnas Assets",
+      "defined_out": [
+        "tmp%45#0"
+      ],
+      "stack_out": [
+        "tmp%45#0"
+      ]
+    },
+    "145": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[1]%4#0",
+        "tmp%45#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "reinterpret_bytes[1]%4#0"
+      ]
+    },
+    "148": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%46#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%46#0"
+      ]
+    },
+    "149": {
+      "op": "txnas Accounts",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%47#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%47#0"
+      ]
+    },
+    "151": {
+      "callsub": "smart_contracts.nft.contract.NFTRevoke.asset_transfer_from_app",
+      "op": "callsub asset_transfer_from_app",
+      "stack_out": []
+    },
+    "154": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "155": {
+      "op": "return",
+      "stack_out": []
+    },
+    "156": {
       "block": "main_get_status_route@9",
       "stack_in": [],
       "op": "txn OnCompletion",
@@ -103,7 +224,7 @@
         "tmp%35#0"
       ]
     },
-    "127": {
+    "158": {
       "op": "!",
       "defined_out": [
         "tmp%36#0"
@@ -112,12 +233,12 @@
         "tmp%36#0"
       ]
     },
-    "128": {
+    "159": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "129": {
+    "160": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%37#0"
@@ -126,12 +247,12 @@
         "tmp%37#0"
       ]
     },
-    "131": {
+    "162": {
       "error": "can only call when not creating",
       "op": "assert // can only call when not creating",
       "stack_out": []
     },
-    "132": {
+    "163": {
       "callsub": "smart_contracts.nft.contract.NFTRevoke.get_status",
       "op": "callsub get_status",
       "defined_out": [
@@ -145,7 +266,7 @@
         "elements_to_encode%2#0"
       ]
     },
-    "135": {
+    "166": {
       "op": "swap",
       "stack_out": [
         "elements_to_encode%0#0",
@@ -153,7 +274,7 @@
         "elements_to_encode%1#0"
       ]
     },
-    "136": {
+    "167": {
       "op": "itob",
       "defined_out": [
         "elements_to_encode%0#0",
@@ -166,7 +287,7 @@
         "val_as_bytes%0#0"
       ]
     },
-    "137": {
+    "168": {
       "op": "swap",
       "stack_out": [
         "elements_to_encode%0#0",
@@ -174,7 +295,7 @@
         "elements_to_encode%2#0"
       ]
     },
-    "138": {
+    "169": {
       "op": "itob",
       "defined_out": [
         "elements_to_encode%0#0",
@@ -187,7 +308,7 @@
         "val_as_bytes%1#0"
       ]
     },
-    "139": {
+    "170": {
       "op": "cover 2",
       "stack_out": [
         "val_as_bytes%1#0",
@@ -195,7 +316,7 @@
         "val_as_bytes%0#0"
       ]
     },
-    "141": {
+    "172": {
       "op": "concat",
       "defined_out": [
         "encoded_tuple_buffer%2#0",
@@ -206,14 +327,14 @@
         "encoded_tuple_buffer%2#0"
       ]
     },
-    "142": {
+    "173": {
       "op": "swap",
       "stack_out": [
         "encoded_tuple_buffer%2#0",
         "val_as_bytes%1#0"
       ]
     },
-    "143": {
+    "174": {
       "op": "concat",
       "defined_out": [
         "encoded_tuple_buffer%3#0"
@@ -222,7 +343,7 @@
         "encoded_tuple_buffer%3#0"
       ]
     },
-    "144": {
+    "175": {
       "op": "pushbytes 0x151f7c75",
       "defined_out": [
         "0x151f7c75",
@@ -233,14 +354,14 @@
         "0x151f7c75"
       ]
     },
-    "150": {
+    "181": {
       "op": "swap",
       "stack_out": [
         "0x151f7c75",
         "encoded_tuple_buffer%3#0"
       ]
     },
-    "151": {
+    "182": {
       "op": "concat",
       "defined_out": [
         "tmp%39#0"
@@ -249,11 +370,11 @@
         "tmp%39#0"
       ]
     },
-    "152": {
+    "183": {
       "op": "log",
       "stack_out": []
     },
-    "153": {
+    "184": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -262,11 +383,11 @@
         "tmp%0#0"
       ]
     },
-    "154": {
+    "185": {
       "op": "return",
       "stack_out": []
     },
-    "155": {
+    "186": {
       "block": "main_emergency_revoke_route@8",
       "stack_in": [],
       "op": "txn OnCompletion",
@@ -277,7 +398,7 @@
         "tmp%31#0"
       ]
     },
-    "157": {
+    "188": {
       "op": "!",
       "defined_out": [
         "tmp%32#0"
@@ -286,12 +407,12 @@
         "tmp%32#0"
       ]
     },
-    "158": {
+    "189": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "159": {
+    "190": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%33#0"
@@ -300,16 +421,16 @@
         "tmp%33#0"
       ]
     },
-    "161": {
+    "192": {
       "error": "can only call when not creating",
       "op": "assert // can only call when not creating",
       "stack_out": []
     },
-    "162": {
+    "193": {
       "callsub": "smart_contracts.nft.contract.NFTRevoke.emergency_revoke",
       "op": "callsub emergency_revoke"
     },
-    "165": {
+    "196": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -318,11 +439,11 @@
         "tmp%0#0"
       ]
     },
-    "166": {
+    "197": {
       "op": "return",
       "stack_out": []
     },
-    "167": {
+    "198": {
       "block": "main_revoke_access_route@7",
       "stack_in": [],
       "op": "txn OnCompletion",
@@ -333,7 +454,7 @@
         "tmp%27#0"
       ]
     },
-    "169": {
+    "200": {
       "op": "!",
       "defined_out": [
         "tmp%28#0"
@@ -342,12 +463,12 @@
         "tmp%28#0"
       ]
     },
-    "170": {
+    "201": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "171": {
+    "202": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%29#0"
@@ -356,16 +477,16 @@
         "tmp%29#0"
       ]
     },
-    "173": {
+    "204": {
       "error": "can only call when not creating",
       "op": "assert // can only call when not creating",
       "stack_out": []
     },
-    "174": {
+    "205": {
       "callsub": "smart_contracts.nft.contract.NFTRevoke.revoke_access",
       "op": "callsub revoke_access"
     },
-    "177": {
+    "208": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -374,11 +495,11 @@
         "tmp%0#0"
       ]
     },
-    "178": {
+    "209": {
       "op": "return",
       "stack_out": []
     },
-    "179": {
+    "210": {
       "block": "main_grant_access_route@6",
       "stack_in": [],
       "op": "txn OnCompletion",
@@ -389,7 +510,7 @@
         "tmp%20#0"
       ]
     },
-    "181": {
+    "212": {
       "op": "!",
       "defined_out": [
         "tmp%21#0"
@@ -398,12 +519,12 @@
         "tmp%21#0"
       ]
     },
-    "182": {
+    "213": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "183": {
+    "214": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%22#0"
@@ -412,12 +533,12 @@
         "tmp%22#0"
       ]
     },
-    "185": {
+    "216": {
       "error": "can only call when not creating",
       "op": "assert // can only call when not creating",
       "stack_out": []
     },
-    "186": {
+    "217": {
       "op": "txna ApplicationArgs 1",
       "defined_out": [
         "reinterpret_bytes[1]%2#0"
@@ -426,7 +547,7 @@
         "reinterpret_bytes[1]%2#0"
       ]
     },
-    "189": {
+    "220": {
       "op": "btoi",
       "defined_out": [
         "tmp%24#0"
@@ -435,7 +556,7 @@
         "tmp%24#0"
       ]
     },
-    "190": {
+    "221": {
       "op": "txnas Accounts",
       "defined_out": [
         "tmp%25#0"
@@ -444,7 +565,7 @@
         "tmp%25#0"
       ]
     },
-    "192": {
+    "223": {
       "op": "txna ApplicationArgs 2",
       "defined_out": [
         "reinterpret_bytes[8]%0#0",
@@ -455,7 +576,7 @@
         "reinterpret_bytes[8]%0#0"
       ]
     },
-    "195": {
+    "226": {
       "op": "btoi",
       "defined_out": [
         "tmp%25#0",
@@ -466,12 +587,12 @@
         "tmp%26#0"
       ]
     },
-    "196": {
+    "227": {
       "callsub": "smart_contracts.nft.contract.NFTRevoke.grant_access",
       "op": "callsub grant_access",
       "stack_out": []
     },
-    "199": {
+    "230": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -480,11 +601,11 @@
         "tmp%0#0"
       ]
     },
-    "200": {
+    "231": {
       "op": "return",
       "stack_out": []
     },
-    "201": {
+    "232": {
       "block": "main_opt_in_to_asset_route@5",
       "stack_in": [],
       "op": "txn OnCompletion",
@@ -495,7 +616,7 @@
         "tmp%15#0"
       ]
     },
-    "203": {
+    "234": {
       "op": "!",
       "defined_out": [
         "tmp%16#0"
@@ -504,12 +625,12 @@
         "tmp%16#0"
       ]
     },
-    "204": {
+    "235": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "205": {
+    "236": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%17#0"
@@ -518,12 +639,12 @@
         "tmp%17#0"
       ]
     },
-    "207": {
+    "238": {
       "error": "can only call when not creating",
       "op": "assert // can only call when not creating",
       "stack_out": []
     },
-    "208": {
+    "239": {
       "op": "txn GroupIndex",
       "defined_out": [
         "tmp%19#0"
@@ -532,7 +653,7 @@
         "tmp%19#0"
       ]
     },
-    "210": {
+    "241": {
       "op": "intc_1 // 1",
       "defined_out": [
         "1",
@@ -543,7 +664,7 @@
         "1"
       ]
     },
-    "211": {
+    "242": {
       "op": "-",
       "defined_out": [
         "gtxn_idx%0#0"
@@ -552,7 +673,7 @@
         "gtxn_idx%0#0"
       ]
     },
-    "212": {
+    "243": {
       "op": "dup",
       "defined_out": [
         "gtxn_idx%0#0",
@@ -563,7 +684,7 @@
         "gtxn_idx%0#0 (copy)"
       ]
     },
-    "213": {
+    "244": {
       "op": "gtxns TypeEnum",
       "defined_out": [
         "gtxn_idx%0#0",
@@ -574,7 +695,7 @@
         "gtxn_type%0#0"
       ]
     },
-    "215": {
+    "246": {
       "op": "intc_1 // pay",
       "defined_out": [
         "gtxn_idx%0#0",
@@ -587,7 +708,7 @@
         "pay"
       ]
     },
-    "216": {
+    "247": {
       "op": "==",
       "defined_out": [
         "gtxn_idx%0#0",
@@ -598,19 +719,19 @@
         "gtxn_type_matches%0#0"
       ]
     },
-    "217": {
+    "248": {
       "error": "transaction type is pay",
       "op": "assert // transaction type is pay",
       "stack_out": [
         "gtxn_idx%0#0"
       ]
     },
-    "218": {
+    "249": {
       "callsub": "smart_contracts.nft.contract.NFTRevoke.opt_in_to_asset",
       "op": "callsub opt_in_to_asset",
       "stack_out": []
     },
-    "221": {
+    "252": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -619,11 +740,11 @@
         "tmp%0#0"
       ]
     },
-    "222": {
+    "253": {
       "op": "return",
       "stack_out": []
     },
-    "223": {
+    "254": {
       "block": "main_asset_config_clawback_route@4",
       "stack_in": [],
       "op": "txn OnCompletion",
@@ -634,7 +755,7 @@
         "tmp%9#0"
       ]
     },
-    "225": {
+    "256": {
       "op": "!",
       "defined_out": [
         "tmp%10#0"
@@ -643,12 +764,12 @@
         "tmp%10#0"
       ]
     },
-    "226": {
+    "257": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "227": {
+    "258": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%11#0"
@@ -657,12 +778,12 @@
         "tmp%11#0"
       ]
     },
-    "229": {
+    "260": {
       "error": "can only call when not creating",
       "op": "assert // can only call when not creating",
       "stack_out": []
     },
-    "230": {
+    "261": {
       "op": "txna ApplicationArgs 1",
       "defined_out": [
         "reinterpret_bytes[1]%1#0"
@@ -671,7 +792,7 @@
         "reinterpret_bytes[1]%1#0"
       ]
     },
-    "233": {
+    "264": {
       "op": "btoi",
       "defined_out": [
         "tmp%13#0"
@@ -680,7 +801,7 @@
         "tmp%13#0"
       ]
     },
-    "234": {
+    "265": {
       "op": "txnas Assets",
       "defined_out": [
         "tmp%14#0"
@@ -689,12 +810,12 @@
         "tmp%14#0"
       ]
     },
-    "236": {
+    "267": {
       "callsub": "smart_contracts.nft.contract.NFTRevoke.asset_config_clawback",
       "op": "callsub asset_config_clawback",
       "stack_out": []
     },
-    "239": {
+    "270": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -703,11 +824,11 @@
         "tmp%0#0"
       ]
     },
-    "240": {
+    "271": {
       "op": "return",
       "stack_out": []
     },
-    "241": {
+    "272": {
       "block": "main_create_application_route@3",
       "stack_in": [],
       "op": "txn OnCompletion",
@@ -718,7 +839,7 @@
         "tmp%3#0"
       ]
     },
-    "243": {
+    "274": {
       "op": "!",
       "defined_out": [
         "tmp%4#0"
@@ -727,12 +848,12 @@
         "tmp%4#0"
       ]
     },
-    "244": {
+    "275": {
       "error": "OnCompletion is not NoOp",
       "op": "assert // OnCompletion is not NoOp",
       "stack_out": []
     },
-    "245": {
+    "276": {
       "op": "txn ApplicationID",
       "defined_out": [
         "tmp%5#0"
@@ -741,7 +862,7 @@
         "tmp%5#0"
       ]
     },
-    "247": {
+    "278": {
       "op": "!",
       "defined_out": [
         "tmp%6#0"
@@ -750,12 +871,12 @@
         "tmp%6#0"
       ]
     },
-    "248": {
+    "279": {
       "error": "can only call when creating",
       "op": "assert // can only call when creating",
       "stack_out": []
     },
-    "249": {
+    "280": {
       "op": "txna ApplicationArgs 1",
       "defined_out": [
         "reinterpret_bytes[1]%0#0"
@@ -764,7 +885,7 @@
         "reinterpret_bytes[1]%0#0"
       ]
     },
-    "252": {
+    "283": {
       "op": "btoi",
       "defined_out": [
         "tmp%7#0"
@@ -773,7 +894,7 @@
         "tmp%7#0"
       ]
     },
-    "253": {
+    "284": {
       "op": "txnas Assets",
       "defined_out": [
         "tmp%8#0"
@@ -782,12 +903,12 @@
         "tmp%8#0"
       ]
     },
-    "255": {
+    "286": {
       "callsub": "smart_contracts.nft.contract.NFTRevoke.create_application",
       "op": "callsub create_application",
       "stack_out": []
     },
-    "258": {
+    "289": {
       "op": "intc_1 // 1",
       "defined_out": [
         "tmp%0#0"
@@ -796,11 +917,11 @@
         "tmp%0#0"
       ]
     },
-    "259": {
+    "290": {
       "op": "return",
       "stack_out": []
     },
-    "260": {
+    "291": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.create_application",
       "params": {
         "asset_id#0": "uint64"
@@ -809,7 +930,7 @@
       "stack_in": [],
       "op": "proto 1 0"
     },
-    "263": {
+    "294": {
       "op": "bytec_3 // \"assetid\"",
       "defined_out": [
         "\"assetid\""
@@ -818,7 +939,7 @@
         "\"assetid\""
       ]
     },
-    "264": {
+    "295": {
       "op": "frame_dig -1",
       "defined_out": [
         "\"assetid\"",
@@ -829,11 +950,11 @@
         "asset_id#0 (copy)"
       ]
     },
-    "266": {
+    "297": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "267": {
+    "298": {
       "op": "bytec_1 // \"access_holder\"",
       "defined_out": [
         "\"access_holder\""
@@ -842,7 +963,7 @@
         "\"access_holder\""
       ]
     },
-    "268": {
+    "299": {
       "op": "global ZeroAddress",
       "defined_out": [
         "\"access_holder\"",
@@ -853,11 +974,11 @@
         "materialized_values%0#0"
       ]
     },
-    "270": {
+    "301": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "271": {
+    "302": {
       "op": "bytec_2 // \"access_expires_at\"",
       "defined_out": [
         "\"access_expires_at\""
@@ -866,7 +987,7 @@
         "\"access_expires_at\""
       ]
     },
-    "272": {
+    "303": {
       "op": "intc_0 // 0",
       "defined_out": [
         "\"access_expires_at\"",
@@ -877,11 +998,11 @@
         "0"
       ]
     },
-    "273": {
+    "304": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "274": {
+    "305": {
       "op": "bytec_0 // \"access_active\"",
       "defined_out": [
         "\"access_active\""
@@ -890,22 +1011,22 @@
         "\"access_active\""
       ]
     },
-    "275": {
+    "306": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"access_active\"",
         "0"
       ]
     },
-    "276": {
+    "307": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "277": {
+    "308": {
       "retsub": true,
       "op": "retsub"
     },
-    "278": {
+    "309": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.asset_config_clawback",
       "params": {
         "asset#0": "uint64"
@@ -914,7 +1035,7 @@
       "stack_in": [],
       "op": "proto 1 0"
     },
-    "281": {
+    "312": {
       "op": "frame_dig -1",
       "defined_out": [
         "asset#0 (copy)"
@@ -923,7 +1044,7 @@
         "asset#0 (copy)"
       ]
     },
-    "283": {
+    "314": {
       "op": "asset_params_get AssetManager",
       "defined_out": [
         "check%0#0",
@@ -934,14 +1055,14 @@
         "check%0#0"
       ]
     },
-    "285": {
+    "316": {
       "error": "asset exists",
       "op": "assert // asset exists",
       "stack_out": [
         "value%0#0"
       ]
     },
-    "286": {
+    "317": {
       "op": "txn Sender",
       "defined_out": [
         "tmp%0#0",
@@ -952,7 +1073,7 @@
         "tmp%0#0"
       ]
     },
-    "288": {
+    "319": {
       "op": "==",
       "defined_out": [
         "tmp%1#0"
@@ -961,14 +1082,14 @@
         "tmp%1#0"
       ]
     },
-    "289": {
+    "320": {
       "op": "assert",
       "stack_out": []
     },
-    "290": {
+    "321": {
       "op": "itxn_begin"
     },
-    "291": {
+    "322": {
       "op": "txn Sender",
       "defined_out": [
         "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0"
@@ -977,7 +1098,7 @@
         "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0"
       ]
     },
-    "293": {
+    "324": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "inner_txn_params%0%%param_ConfigAssetClawback_idx_0#0",
@@ -988,27 +1109,27 @@
         "inner_txn_params%0%%param_ConfigAssetClawback_idx_0#0"
       ]
     },
-    "295": {
+    "326": {
       "op": "itxn_field ConfigAssetClawback",
       "stack_out": [
         "inner_txn_params%0%%param_ConfigAssetManager_idx_0#0"
       ]
     },
-    "297": {
+    "328": {
       "op": "itxn_field ConfigAssetManager",
       "stack_out": []
     },
-    "299": {
+    "330": {
       "op": "frame_dig -1",
       "stack_out": [
         "asset#0 (copy)"
       ]
     },
-    "301": {
+    "332": {
       "op": "itxn_field ConfigAsset",
       "stack_out": []
     },
-    "303": {
+    "334": {
       "op": "pushint 3 // acfg",
       "defined_out": [
         "acfg"
@@ -1017,11 +1138,11 @@
         "acfg"
       ]
     },
-    "305": {
+    "336": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "307": {
+    "338": {
       "op": "intc_0 // 0",
       "defined_out": [
         "0"
@@ -1030,18 +1151,18 @@
         "0"
       ]
     },
-    "308": {
+    "339": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "310": {
+    "341": {
       "op": "itxn_submit"
     },
-    "311": {
+    "342": {
       "retsub": true,
       "op": "retsub"
     },
-    "312": {
+    "343": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.opt_in_to_asset",
       "params": {
         "mbrpay#0": "uint64"
@@ -1050,7 +1171,7 @@
       "stack_in": [],
       "op": "proto 1 0"
     },
-    "315": {
+    "346": {
       "op": "txn Sender",
       "defined_out": [
         "tmp%0#0"
@@ -1059,7 +1180,7 @@
         "tmp%0#0"
       ]
     },
-    "317": {
+    "348": {
       "op": "global CreatorAddress",
       "defined_out": [
         "tmp%0#0",
@@ -1070,7 +1191,7 @@
         "tmp%1#0"
       ]
     },
-    "319": {
+    "350": {
       "op": "==",
       "defined_out": [
         "tmp%2#0"
@@ -1079,11 +1200,11 @@
         "tmp%2#0"
       ]
     },
-    "320": {
+    "351": {
       "op": "assert",
       "stack_out": []
     },
-    "321": {
+    "352": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "tmp%3#0"
@@ -1092,7 +1213,7 @@
         "tmp%3#0"
       ]
     },
-    "323": {
+    "354": {
       "op": "intc_0 // 0",
       "defined_out": [
         "0",
@@ -1103,7 +1224,7 @@
         "0"
       ]
     },
-    "324": {
+    "355": {
       "op": "bytec_3 // \"assetid\"",
       "defined_out": [
         "\"assetid\"",
@@ -1116,7 +1237,7 @@
         "\"assetid\""
       ]
     },
-    "325": {
+    "356": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -1129,7 +1250,7 @@
         "maybe_exists%0#0"
       ]
     },
-    "326": {
+    "357": {
       "error": "check self.assetid exists",
       "op": "assert // check self.assetid exists",
       "stack_out": [
@@ -1137,14 +1258,14 @@
         "maybe_value%0#0"
       ]
     },
-    "327": {
+    "358": {
       "op": "swap",
       "stack_out": [
         "maybe_value%0#0",
         "tmp%3#0"
       ]
     },
-    "328": {
+    "359": {
       "op": "dig 1",
       "defined_out": [
         "maybe_value%0#0",
@@ -1157,7 +1278,7 @@
         "maybe_value%0#0 (copy)"
       ]
     },
-    "330": {
+    "361": {
       "op": "asset_holding_get AssetBalance",
       "defined_out": [
         "maybe_value%0#0",
@@ -1170,14 +1291,14 @@
         "tmp%5#0"
       ]
     },
-    "332": {
+    "363": {
       "op": "bury 1",
       "stack_out": [
         "maybe_value%0#0",
         "tmp%5#0"
       ]
     },
-    "334": {
+    "365": {
       "op": "!",
       "defined_out": [
         "maybe_value%0#0",
@@ -1188,13 +1309,13 @@
         "tmp%6#0"
       ]
     },
-    "335": {
+    "366": {
       "op": "assert",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "336": {
+    "367": {
       "op": "frame_dig -1",
       "defined_out": [
         "maybe_value%0#0",
@@ -1205,7 +1326,7 @@
         "mbrpay#0 (copy)"
       ]
     },
-    "338": {
+    "369": {
       "op": "gtxns Receiver",
       "defined_out": [
         "maybe_value%0#0",
@@ -1216,7 +1337,7 @@
         "tmp%7#0"
       ]
     },
-    "340": {
+    "371": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "maybe_value%0#0",
@@ -1229,7 +1350,7 @@
         "tmp%8#0"
       ]
     },
-    "342": {
+    "373": {
       "op": "==",
       "defined_out": [
         "maybe_value%0#0",
@@ -1240,20 +1361,20 @@
         "tmp%9#0"
       ]
     },
-    "343": {
+    "374": {
       "op": "assert",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "344": {
+    "375": {
       "op": "frame_dig -1",
       "stack_out": [
         "maybe_value%0#0",
         "mbrpay#0 (copy)"
       ]
     },
-    "346": {
+    "377": {
       "op": "gtxns Amount",
       "defined_out": [
         "maybe_value%0#0",
@@ -1264,7 +1385,7 @@
         "tmp%10#0"
       ]
     },
-    "348": {
+    "379": {
       "op": "global MinBalance",
       "defined_out": [
         "maybe_value%0#0",
@@ -1277,7 +1398,7 @@
         "tmp%11#0"
       ]
     },
-    "350": {
+    "381": {
       "op": "global AssetOptInMinBalance",
       "defined_out": [
         "maybe_value%0#0",
@@ -1292,7 +1413,7 @@
         "tmp%12#0"
       ]
     },
-    "352": {
+    "383": {
       "op": "+",
       "defined_out": [
         "maybe_value%0#0",
@@ -1305,7 +1426,7 @@
         "tmp%13#0"
       ]
     },
-    "353": {
+    "384": {
       "op": "==",
       "defined_out": [
         "maybe_value%0#0",
@@ -1316,16 +1437,16 @@
         "tmp%14#0"
       ]
     },
-    "354": {
+    "385": {
       "op": "assert",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "355": {
+    "386": {
       "op": "itxn_begin"
     },
-    "356": {
+    "387": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1336,7 +1457,7 @@
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "358": {
+    "389": {
       "op": "intc_0 // 0",
       "stack_out": [
         "maybe_value%0#0",
@@ -1344,24 +1465,24 @@
         "0"
       ]
     },
-    "359": {
+    "390": {
       "op": "itxn_field AssetAmount",
       "stack_out": [
         "maybe_value%0#0",
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "361": {
+    "392": {
       "op": "itxn_field AssetReceiver",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "363": {
+    "394": {
       "op": "itxn_field XferAsset",
       "stack_out": []
     },
-    "365": {
+    "396": {
       "op": "intc_2 // axfer",
       "defined_out": [
         "axfer"
@@ -1370,28 +1491,28 @@
         "axfer"
       ]
     },
-    "366": {
+    "397": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "368": {
+    "399": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "369": {
+    "400": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "371": {
+    "402": {
       "op": "itxn_submit"
     },
-    "372": {
+    "403": {
       "retsub": true,
       "op": "retsub"
     },
-    "373": {
+    "404": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.grant_access",
       "params": {
         "holder#0": "bytes",
@@ -1401,7 +1522,7 @@
       "stack_in": [],
       "op": "proto 2 0"
     },
-    "376": {
+    "407": {
       "op": "intc_0 // 0",
       "defined_out": [
         "0"
@@ -1410,7 +1531,7 @@
         "0"
       ]
     },
-    "377": {
+    "408": {
       "op": "bytec_0 // \"access_active\"",
       "defined_out": [
         "\"access_active\"",
@@ -1421,7 +1542,7 @@
         "\"access_active\""
       ]
     },
-    "378": {
+    "409": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -1432,14 +1553,14 @@
         "maybe_exists%0#0"
       ]
     },
-    "379": {
+    "410": {
       "error": "check self.access_active exists",
       "op": "assert // check self.access_active exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "380": {
+    "411": {
       "op": "!",
       "defined_out": [
         "tmp%0#0"
@@ -1448,12 +1569,12 @@
         "tmp%0#0"
       ]
     },
-    "381": {
+    "412": {
       "error": "Access already active",
       "op": "assert // Access already active",
       "stack_out": []
     },
-    "382": {
+    "413": {
       "op": "bytec_1 // \"access_holder\"",
       "defined_out": [
         "\"access_holder\""
@@ -1462,7 +1583,7 @@
         "\"access_holder\""
       ]
     },
-    "383": {
+    "414": {
       "op": "frame_dig -2",
       "defined_out": [
         "\"access_holder\"",
@@ -1473,11 +1594,11 @@
         "holder#0 (copy)"
       ]
     },
-    "385": {
+    "416": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "386": {
+    "417": {
       "op": "bytec_2 // \"access_expires_at\"",
       "defined_out": [
         "\"access_expires_at\""
@@ -1486,7 +1607,7 @@
         "\"access_expires_at\""
       ]
     },
-    "387": {
+    "418": {
       "op": "frame_dig -1",
       "defined_out": [
         "\"access_expires_at\"",
@@ -1497,17 +1618,17 @@
         "ends_at#0 (copy)"
       ]
     },
-    "389": {
+    "420": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "390": {
+    "421": {
       "op": "bytec_0 // \"access_active\"",
       "stack_out": [
         "\"access_active\""
       ]
     },
-    "391": {
+    "422": {
       "op": "intc_1 // 1",
       "defined_out": [
         "\"access_active\"",
@@ -1518,20 +1639,20 @@
         "1"
       ]
     },
-    "392": {
+    "423": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "393": {
+    "424": {
       "op": "itxn_begin"
     },
-    "394": {
+    "425": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "395": {
+    "426": {
       "op": "bytec_3 // \"assetid\"",
       "defined_out": [
         "\"assetid\"",
@@ -1542,7 +1663,7 @@
         "\"assetid\""
       ]
     },
-    "396": {
+    "427": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%1#0",
@@ -1553,41 +1674,41 @@
         "maybe_exists%1#0"
       ]
     },
-    "397": {
+    "428": {
       "error": "check self.assetid exists",
       "op": "assert // check self.assetid exists",
       "stack_out": [
         "maybe_value%1#0"
       ]
     },
-    "398": {
+    "429": {
       "op": "intc_1 // 1",
       "stack_out": [
         "maybe_value%1#0",
         "1"
       ]
     },
-    "399": {
+    "430": {
       "op": "itxn_field AssetAmount",
       "stack_out": [
         "maybe_value%1#0"
       ]
     },
-    "401": {
+    "432": {
       "op": "itxn_field XferAsset",
       "stack_out": []
     },
-    "403": {
+    "434": {
       "op": "frame_dig -2",
       "stack_out": [
         "holder#0 (copy)"
       ]
     },
-    "405": {
+    "436": {
       "op": "itxn_field AssetReceiver",
       "stack_out": []
     },
-    "407": {
+    "438": {
       "op": "intc_2 // axfer",
       "defined_out": [
         "axfer"
@@ -1596,28 +1717,28 @@
         "axfer"
       ]
     },
-    "408": {
+    "439": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "410": {
+    "441": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "411": {
+    "442": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "413": {
+    "444": {
       "op": "itxn_submit"
     },
-    "414": {
+    "445": {
       "retsub": true,
       "op": "retsub"
     },
-    "415": {
+    "446": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.revoke_access",
       "params": {},
       "block": "revoke_access",
@@ -1630,7 +1751,7 @@
         "0"
       ]
     },
-    "416": {
+    "447": {
       "op": "bytec_0 // \"access_active\"",
       "defined_out": [
         "\"access_active\"",
@@ -1641,7 +1762,7 @@
         "\"access_active\""
       ]
     },
-    "417": {
+    "448": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -1652,14 +1773,14 @@
         "maybe_exists%0#0"
       ]
     },
-    "418": {
+    "449": {
       "error": "check self.access_active exists",
       "op": "assert // check self.access_active exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "419": {
+    "450": {
       "op": "intc_1 // 1",
       "defined_out": [
         "1",
@@ -1670,7 +1791,7 @@
         "1"
       ]
     },
-    "420": {
+    "451": {
       "op": "==",
       "defined_out": [
         "tmp%0#0"
@@ -1679,12 +1800,12 @@
         "tmp%0#0"
       ]
     },
-    "421": {
+    "452": {
       "error": "No active access",
       "op": "assert // No active access",
       "stack_out": []
     },
-    "422": {
+    "453": {
       "op": "global LatestTimestamp",
       "defined_out": [
         "tmp%1#0"
@@ -1693,14 +1814,14 @@
         "tmp%1#0"
       ]
     },
-    "424": {
+    "455": {
       "op": "intc_0 // 0",
       "stack_out": [
         "tmp%1#0",
         "0"
       ]
     },
-    "425": {
+    "456": {
       "op": "bytec_2 // \"access_expires_at\"",
       "defined_out": [
         "\"access_expires_at\"",
@@ -1713,7 +1834,7 @@
         "\"access_expires_at\""
       ]
     },
-    "426": {
+    "457": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%1#0",
@@ -1726,7 +1847,7 @@
         "maybe_exists%1#0"
       ]
     },
-    "427": {
+    "458": {
       "error": "check self.access_expires_at exists",
       "op": "assert // check self.access_expires_at exists",
       "stack_out": [
@@ -1734,7 +1855,7 @@
         "maybe_value%1#0"
       ]
     },
-    "428": {
+    "459": {
       "op": ">",
       "defined_out": [
         "tmp%2#0"
@@ -1743,15 +1864,15 @@
         "tmp%2#0"
       ]
     },
-    "429": {
+    "460": {
       "error": "Access not yet expired",
       "op": "assert // Access not yet expired",
       "stack_out": []
     },
-    "430": {
+    "461": {
       "op": "itxn_begin"
     },
-    "431": {
+    "462": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
@@ -1760,14 +1881,14 @@
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "433": {
+    "464": {
       "op": "intc_0 // 0",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
         "0"
       ]
     },
-    "434": {
+    "465": {
       "op": "bytec_3 // \"assetid\"",
       "defined_out": [
         "\"assetid\"",
@@ -1780,7 +1901,7 @@
         "\"assetid\""
       ]
     },
-    "435": {
+    "466": {
       "op": "app_global_get_ex",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1793,7 +1914,7 @@
         "maybe_exists%2#0"
       ]
     },
-    "436": {
+    "467": {
       "error": "check self.assetid exists",
       "op": "assert // check self.assetid exists",
       "stack_out": [
@@ -1801,7 +1922,7 @@
         "maybe_value%2#0"
       ]
     },
-    "437": {
+    "468": {
       "op": "intc_0 // 0",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1809,7 +1930,7 @@
         "0"
       ]
     },
-    "438": {
+    "469": {
       "op": "bytec_1 // \"access_holder\"",
       "defined_out": [
         "\"access_holder\"",
@@ -1824,7 +1945,7 @@
         "\"access_holder\""
       ]
     },
-    "439": {
+    "470": {
       "op": "app_global_get_ex",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1839,7 +1960,7 @@
         "maybe_exists%3#0"
       ]
     },
-    "440": {
+    "471": {
       "error": "check self.access_holder exists",
       "op": "assert // check self.access_holder exists",
       "stack_out": [
@@ -1848,7 +1969,7 @@
         "maybe_value%3#0"
       ]
     },
-    "441": {
+    "472": {
       "op": "intc_1 // 1",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1857,7 +1978,7 @@
         "1"
       ]
     },
-    "442": {
+    "473": {
       "op": "itxn_field AssetAmount",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -1865,24 +1986,24 @@
         "maybe_value%3#0"
       ]
     },
-    "444": {
+    "475": {
       "op": "itxn_field AssetSender",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
         "maybe_value%2#0"
       ]
     },
-    "446": {
+    "477": {
       "op": "itxn_field XferAsset",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "448": {
+    "479": {
       "op": "itxn_field AssetReceiver",
       "stack_out": []
     },
-    "450": {
+    "481": {
       "op": "intc_2 // axfer",
       "defined_out": [
         "axfer"
@@ -1891,47 +2012,47 @@
         "axfer"
       ]
     },
-    "451": {
+    "482": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "453": {
+    "484": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "454": {
+    "485": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "456": {
+    "487": {
       "op": "itxn_submit"
     },
-    "457": {
+    "488": {
       "op": "bytec_0 // \"access_active\"",
       "stack_out": [
         "\"access_active\""
       ]
     },
-    "458": {
+    "489": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"access_active\"",
         "0"
       ]
     },
-    "459": {
+    "490": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "460": {
+    "491": {
       "op": "bytec_1 // \"access_holder\"",
       "stack_out": [
         "\"access_holder\""
       ]
     },
-    "461": {
+    "492": {
       "op": "global ZeroAddress",
       "defined_out": [
         "\"access_holder\"",
@@ -1942,32 +2063,32 @@
         "materialized_values%0#0"
       ]
     },
-    "463": {
+    "494": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "464": {
+    "495": {
       "op": "bytec_2 // \"access_expires_at\"",
       "stack_out": [
         "\"access_expires_at\""
       ]
     },
-    "465": {
+    "496": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"access_expires_at\"",
         "0"
       ]
     },
-    "466": {
+    "497": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "467": {
+    "498": {
       "retsub": true,
       "op": "retsub"
     },
-    "468": {
+    "499": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.emergency_revoke",
       "params": {},
       "block": "emergency_revoke",
@@ -1980,7 +2101,7 @@
         "0"
       ]
     },
-    "469": {
+    "500": {
       "op": "bytec_0 // \"access_active\"",
       "defined_out": [
         "\"access_active\"",
@@ -1991,7 +2112,7 @@
         "\"access_active\""
       ]
     },
-    "470": {
+    "501": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -2002,14 +2123,14 @@
         "maybe_exists%0#0"
       ]
     },
-    "471": {
+    "502": {
       "error": "check self.access_active exists",
       "op": "assert // check self.access_active exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "472": {
+    "503": {
       "op": "intc_1 // 1",
       "defined_out": [
         "1",
@@ -2020,7 +2141,7 @@
         "1"
       ]
     },
-    "473": {
+    "504": {
       "op": "==",
       "defined_out": [
         "tmp%0#0"
@@ -2029,15 +2150,15 @@
         "tmp%0#0"
       ]
     },
-    "474": {
+    "505": {
       "error": "No active access",
       "op": "assert // No active access",
       "stack_out": []
     },
-    "475": {
+    "506": {
       "op": "itxn_begin"
     },
-    "476": {
+    "507": {
       "op": "global CurrentApplicationAddress",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
@@ -2046,14 +2167,14 @@
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "478": {
+    "509": {
       "op": "intc_0 // 0",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
         "0"
       ]
     },
-    "479": {
+    "510": {
       "op": "bytec_3 // \"assetid\"",
       "defined_out": [
         "\"assetid\"",
@@ -2066,7 +2187,7 @@
         "\"assetid\""
       ]
     },
-    "480": {
+    "511": {
       "op": "app_global_get_ex",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2079,7 +2200,7 @@
         "maybe_exists%1#0"
       ]
     },
-    "481": {
+    "512": {
       "error": "check self.assetid exists",
       "op": "assert // check self.assetid exists",
       "stack_out": [
@@ -2087,7 +2208,7 @@
         "maybe_value%1#0"
       ]
     },
-    "482": {
+    "513": {
       "op": "intc_0 // 0",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2095,7 +2216,7 @@
         "0"
       ]
     },
-    "483": {
+    "514": {
       "op": "bytec_1 // \"access_holder\"",
       "defined_out": [
         "\"access_holder\"",
@@ -2110,7 +2231,7 @@
         "\"access_holder\""
       ]
     },
-    "484": {
+    "515": {
       "op": "app_global_get_ex",
       "defined_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2125,7 +2246,7 @@
         "maybe_exists%2#0"
       ]
     },
-    "485": {
+    "516": {
       "error": "check self.access_holder exists",
       "op": "assert // check self.access_holder exists",
       "stack_out": [
@@ -2134,7 +2255,7 @@
         "maybe_value%2#0"
       ]
     },
-    "486": {
+    "517": {
       "op": "intc_1 // 1",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2143,7 +2264,7 @@
         "1"
       ]
     },
-    "487": {
+    "518": {
       "op": "itxn_field AssetAmount",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
@@ -2151,24 +2272,24 @@
         "maybe_value%2#0"
       ]
     },
-    "489": {
+    "520": {
       "op": "itxn_field AssetSender",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
         "maybe_value%1#0"
       ]
     },
-    "491": {
+    "522": {
       "op": "itxn_field XferAsset",
       "stack_out": [
         "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
       ]
     },
-    "493": {
+    "524": {
       "op": "itxn_field AssetReceiver",
       "stack_out": []
     },
-    "495": {
+    "526": {
       "op": "intc_2 // axfer",
       "defined_out": [
         "axfer"
@@ -2177,47 +2298,47 @@
         "axfer"
       ]
     },
-    "496": {
+    "527": {
       "op": "itxn_field TypeEnum",
       "stack_out": []
     },
-    "498": {
+    "529": {
       "op": "intc_0 // 0",
       "stack_out": [
         "0"
       ]
     },
-    "499": {
+    "530": {
       "op": "itxn_field Fee",
       "stack_out": []
     },
-    "501": {
+    "532": {
       "op": "itxn_submit"
     },
-    "502": {
+    "533": {
       "op": "bytec_0 // \"access_active\"",
       "stack_out": [
         "\"access_active\""
       ]
     },
-    "503": {
+    "534": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"access_active\"",
         "0"
       ]
     },
-    "504": {
+    "535": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "505": {
+    "536": {
       "op": "bytec_1 // \"access_holder\"",
       "stack_out": [
         "\"access_holder\""
       ]
     },
-    "506": {
+    "537": {
       "op": "global ZeroAddress",
       "defined_out": [
         "\"access_holder\"",
@@ -2228,11 +2349,11 @@
         "materialized_values%0#0"
       ]
     },
-    "508": {
+    "539": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "509": {
+    "540": {
       "op": "bytec_2 // \"access_expires_at\"",
       "defined_out": [
         "\"access_expires_at\""
@@ -2241,22 +2362,22 @@
         "\"access_expires_at\""
       ]
     },
-    "510": {
+    "541": {
       "op": "intc_0 // 0",
       "stack_out": [
         "\"access_expires_at\"",
         "0"
       ]
     },
-    "511": {
+    "542": {
       "op": "app_global_put",
       "stack_out": []
     },
-    "512": {
+    "543": {
       "retsub": true,
       "op": "retsub"
     },
-    "513": {
+    "544": {
       "subroutine": "smart_contracts.nft.contract.NFTRevoke.get_status",
       "params": {},
       "block": "get_status",
@@ -2269,7 +2390,7 @@
         "0"
       ]
     },
-    "514": {
+    "545": {
       "op": "bytec_1 // \"access_holder\"",
       "defined_out": [
         "\"access_holder\"",
@@ -2280,7 +2401,7 @@
         "\"access_holder\""
       ]
     },
-    "515": {
+    "546": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%0#0",
@@ -2291,21 +2412,21 @@
         "maybe_exists%0#0"
       ]
     },
-    "516": {
+    "547": {
       "error": "check self.access_holder exists",
       "op": "assert // check self.access_holder exists",
       "stack_out": [
         "maybe_value%0#0"
       ]
     },
-    "517": {
+    "548": {
       "op": "intc_0 // 0",
       "stack_out": [
         "maybe_value%0#0",
         "0"
       ]
     },
-    "518": {
+    "549": {
       "op": "bytec_2 // \"access_expires_at\"",
       "defined_out": [
         "\"access_expires_at\"",
@@ -2318,7 +2439,7 @@
         "\"access_expires_at\""
       ]
     },
-    "519": {
+    "550": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%1#0",
@@ -2331,7 +2452,7 @@
         "maybe_exists%1#0"
       ]
     },
-    "520": {
+    "551": {
       "error": "check self.access_expires_at exists",
       "op": "assert // check self.access_expires_at exists",
       "stack_out": [
@@ -2339,7 +2460,7 @@
         "maybe_value%1#0"
       ]
     },
-    "521": {
+    "552": {
       "op": "intc_0 // 0",
       "stack_out": [
         "maybe_value%0#0",
@@ -2347,7 +2468,7 @@
         "0"
       ]
     },
-    "522": {
+    "553": {
       "op": "bytec_0 // \"access_active\"",
       "defined_out": [
         "\"access_active\"",
@@ -2362,7 +2483,7 @@
         "\"access_active\""
       ]
     },
-    "523": {
+    "554": {
       "op": "app_global_get_ex",
       "defined_out": [
         "maybe_exists%2#0",
@@ -2377,7 +2498,7 @@
         "maybe_exists%2#0"
       ]
     },
-    "524": {
+    "555": {
       "error": "check self.access_active exists",
       "op": "assert // check self.access_active exists",
       "stack_out": [
@@ -2386,7 +2507,164 @@
         "maybe_value%2#0"
       ]
     },
-    "525": {
+    "556": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "557": {
+      "subroutine": "smart_contracts.nft.contract.NFTRevoke.asset_transfer_from_app",
+      "params": {
+        "asset#0": "uint64",
+        "receiver#0": "bytes"
+      },
+      "block": "asset_transfer_from_app",
+      "stack_in": [],
+      "op": "proto 2 0"
+    },
+    "560": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "asset#0 (copy)"
+      ],
+      "stack_out": [
+        "asset#0 (copy)"
+      ]
+    },
+    "562": {
+      "op": "asset_params_get AssetManager",
+      "defined_out": [
+        "check%0#0",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "value%0#0",
+        "check%0#0"
+      ]
+    },
+    "564": {
+      "error": "asset exists",
+      "op": "assert // asset exists",
+      "stack_out": [
+        "value%0#0"
+      ]
+    },
+    "565": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "value%0#0",
+        "tmp%0#0"
+      ]
+    },
+    "567": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "568": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "569": {
+      "op": "itxn_begin"
+    },
+    "570": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "inner_txn_params%0%%param_Sender_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_Sender_idx_0#0"
+      ]
+    },
+    "572": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "inner_txn_params%0%%param_Sender_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_Sender_idx_0#0",
+        "1"
+      ]
+    },
+    "573": {
+      "op": "itxn_field AssetAmount",
+      "stack_out": [
+        "inner_txn_params%0%%param_Sender_idx_0#0"
+      ]
+    },
+    "575": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "inner_txn_params%0%%param_Sender_idx_0#0",
+        "asset#0 (copy)"
+      ]
+    },
+    "577": {
+      "op": "itxn_field XferAsset",
+      "stack_out": [
+        "inner_txn_params%0%%param_Sender_idx_0#0"
+      ]
+    },
+    "579": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "inner_txn_params%0%%param_Sender_idx_0#0",
+        "receiver#0 (copy)"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_Sender_idx_0#0",
+        "receiver#0 (copy)"
+      ]
+    },
+    "581": {
+      "op": "itxn_field AssetReceiver",
+      "stack_out": [
+        "inner_txn_params%0%%param_Sender_idx_0#0"
+      ]
+    },
+    "583": {
+      "op": "itxn_field Sender",
+      "stack_out": []
+    },
+    "585": {
+      "op": "intc_2 // axfer",
+      "defined_out": [
+        "axfer"
+      ],
+      "stack_out": [
+        "axfer"
+      ]
+    },
+    "586": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "588": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "589": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "591": {
+      "op": "itxn_submit"
+    },
+    "592": {
       "retsub": true,
       "op": "retsub"
     }
