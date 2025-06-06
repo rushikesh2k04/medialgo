@@ -20,7 +20,7 @@ const Navigation: React.FC = () => {
         <div className="flex items-center space-x-6">
           {role === 'doctor' && (
             <div className="text-white space-x-4">
-              <a href="#profile" className="hover:text-teal-200">Profile</a>
+              <a href="#profile\" className="hover:text-teal-200">Profile</a>
               <a href="#services" className="hover:text-teal-200">Services</a>
               <a href="#marketplace" className="hover:text-teal-200">Marketplace</a>
             </div>
