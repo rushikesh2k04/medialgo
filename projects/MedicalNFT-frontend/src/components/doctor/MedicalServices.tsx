@@ -63,6 +63,8 @@ const MedicalServices: React.FC = () => {
       const key = `doctor_nfts_${activeAddress}`;
       const prev = JSON.parse(localStorage.getItem(key) || "[]");
       const newEntry = {
+        DoctorWalletAddress: activeAddress,
+        PatientWalletAddress: patientWallet,
         assetId: assetId.toString(),
         appId: appId.toString(),
         metadata: `https://ipfs.io/ipfs/${ipfsCID}`,
@@ -77,7 +79,7 @@ const MedicalServices: React.FC = () => {
         localStorage.setItem(key, JSON.stringify([...prev, newEntry]));
       }
     }
-  }, [assetId, appId, activeAddress, ipfsCID]);
+  }, [assetId, appId, activeAddress, ipfsCID, patientWallet]);
 
   return (
     <div className="form-card">

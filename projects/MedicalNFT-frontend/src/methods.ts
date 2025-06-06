@@ -61,7 +61,7 @@ export function createApplication(
 
     const appId = BigInt(result.appClient.appId);
     setAppId(appId);
-
+    console.log("The apllication is created with id:",appId);
     return appId;
   };
 }
