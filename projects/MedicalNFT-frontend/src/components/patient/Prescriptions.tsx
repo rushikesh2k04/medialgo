@@ -1,102 +1,118 @@
-import React, { useState } from "react";
-import { useWallet } from "@txnlab/use-wallet-react";
-import * as algokit from "@algorandfoundation/algokit-utils";
-import { assetFromApp as assetFromRevokeApp } from "../../revoke_methods";
-import { NftRevokeClient } from "../../contracts/NFTRevoke";
+import React, { useState, useEffect } from 'react';
+import { useWallet } from '@txnlab/use-wallet-react';
+import * as algokit from '@algorandfoundation/algokit-utils';
+import { getAlgodConfigFromViteEnvironment } from '../../utils/network/getAlgoClientConfigs';
+import CryptoJS from 'crypto-js';
 
-// Placeholder: Replace with real logic to fetch patient's NFTs
-const ownedNFTs: Array<{ id: bigint; metadata?: string; appId: bigint }> = [
-  // Example: { id: 1234567890n, metadata: "Prescription for John Doe", appId: 987654321n }
-];
-
-const algorand = /* get your algorand client instance */ null as unknown as algokit.AlgorandClient;
+interface Prescription {
+  id: bigint;
+  name: string;
+  metadata?: string;
+  encryptedData?: string;
+  expiryDate?: string;
+}
 
 const Prescriptions: React.FC = () => {
-  const { activeAddress, transactionSigner } = useWallet();
-  const [showPopup, setShowPopup] = useState(false);
-  const [selectedNFT, setSelectedNFT] = useState<{ id: bigint; appId: bigint } | null>(null);
-  const [endsAt, setEndsAt] = useState(""); // Timestamp or formatted date as string
-  const [loading, setLoading] = useState(false);
+  const { activeAddress } = useWallet();
+  const [prescriptions, setPrescriptions] = useState<Prescription[]>([]);
+  const [decryptionKey, setDecryptionKey] = useState('');
+  const [selectedPrescription, setSelectedPrescription] = useState<Prescription | null>(null);
+  const [decryptedContent, setDecryptedContent] = useState<string | null>(null);
 
-  // For viewing/decrypting, you would fetch metadata or IPFS content here
-  const [decrypted, setDecrypted] = useState<string | null>(null);
+  const algodConfig = getAlgodConfigFromViteEnvironment();
+  const algorand = algokit.AlgorandClient.fromConfig({ algodConfig });
 
-  const handleDecrypt = async (nft: { metadata?: string }) => {
-    // If your metadata is a URL (e.g., IPFS), fetch it here
-    if (nft.metadata && nft.metadata.startsWith("http")) {
-      try {
-        const response = await fetch(nft.metadata);
-        const data = await response.text();
-        setDecrypted(data);
-      } catch {
-        setDecrypted("Unable to fetch prescription data.");
-      }
-    } else {
-      setDecrypted(nft.metadata || "No metadata available.");
+  useEffect(() => {
+    if (activeAddress) {
+      // TODO: Fetch user's prescriptions
+      // This would come from your backend or the Algorand indexer
     }
-  };
+  }, [activeAddress]);
 
-  const handleTransfer = async () => {
-    if (!activeAddress || !transactionSigner || !selectedNFT) {
-      alert("Connect wallet and select NFT.");
+  const handleDecrypt = async (prescription: Prescription) => {
+    if (!decryptionKey) {
+      alert('Please enter the decryption key');
       return;
     }
-    setLoading(true);
+
     try {
-      // Convert endsAt (date/time string) to a BigInt timestamp if needed
-      // For demo, use Date.now() + 1 hour as expiry
-      const endsAtBigInt = BigInt(Date.now() + 3600 * 1000);
-      const revokeClient = new NftRevokeClient({
-        appId: selectedNFT.appId,
-        algorand,
-        defaultSigner: transactionSigner,
-      });
-      await assetFromRevokeApp(
-        algorand,
-        revokeClient,
-        transactionSigner,
-        activeAddress,
-        selectedNFT.id,
-        endsAtBigInt
-      )();
-      setShowPopup(false);
-      alert("NFT transferred with revoke schedule!");
-    } catch (e) {
-      alert("Transfer failed");
+      if (!prescription.encryptedData) {
+        throw new Error('No encrypted data available');
+      }
+
+      const bytes = CryptoJS.AES.decrypt(prescription.encryptedData, decryptionKey);
+      const decrypted = bytes.toString(CryptoJS.enc.Utf8);
+      
+      if (!decrypted) {
+        throw new Error('Invalid decryption key');
+      }
+
+      setDecryptedContent(decrypted);
+      setSelectedPrescription(prescription);
+    } catch (error) {
+      console.error('Decryption error:', error);
+      alert('Failed to decrypt the prescription. Please check your key.');
     }
-    setLoading(false);
   };
 
   return (
-    <div>
-      <h2>My Prescriptions</h2>
-      {ownedNFTs.map(nft => (
-        <div key={nft.id.toString()} style={{ border: "1px solid #ccc", margin: 8, padding: 8 }}>
-          <div>ID: {nft.id.toString()}</div>
-          <div>Metadata: {nft.metadata || "N/A"}</div>
-          <button onClick={() => handleDecrypt(nft)}>View</button>
-          <button onClick={() => { setSelectedNFT({ id: nft.id, appId: nft.appId }); setShowPopup(true); }}>Transfer</button>
-        </div>
-      ))}
-      {decrypted && (
-        <div>
-          <h3>Decrypted Prescription</h3>
-          <pre>{decrypted}</pre>
-        </div>
-      )}
-      {showPopup && selectedNFT && (
-        <div className="popup">
-          <h3>Set Revoke Expiry</h3>
-          {/* For demo, you can use a date input or just use a fixed time */}
-          <input
-            type="datetime-local"
-            value={endsAt}
-            onChange={e => setEndsAt(e.target.value)}
-          />
-          <button onClick={handleTransfer} disabled={loading}>
-            {loading ? "Transferring..." : "Transfer"}
-          </button>
-          <button onClick={() => setShowPopup(false)}>Cancel</button>
+    <div className="space-y-6">
+      <h2 className="text-2xl font-semibold text-gray-800">My Prescriptions</h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {prescriptions.map((prescription) => (
+          <div key={prescription.id.toString()} className="bg-white rounded-lg shadow-md p-6 border border-gray-200">
+            <h3 className="text-xl font-semibold mb-2">{prescription.name}</h3>
+            <div className="space-y-2 mb-4">
+              <p className="text-gray-600">ID: {prescription.id.toString()}</p>
+              {prescription.expiryDate && (
+                <p className="text-gray-600">Expires: {prescription.expiryDate}</p>
+              )}
+            </div>
+            
+            <div className="space-y-3">
+              <input
+                type="password"
+                placeholder="Enter decryption key"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                onChange={(e) => setDecryptionKey(e.target.value)}
+              />
+              <button
+                onClick={() => handleDecrypt(prescription)}
+                className="w-full py-2 px-4 bg-teal-600 hover:bg-teal-700 text-white rounded-md transition-colors"
+              >
+                View Prescription
+              </button>
+            </div>
+          </div>
+        ))}
+        
+        {prescriptions.length === 0 && (
+          <div className="col-span-full text-center py-8 text-gray-500">
+            You don't have any prescriptions yet.
+          </div>
+        )}
+      </div>
+
+      {selectedPrescription && decryptedContent && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg p-6 max-w-2xl w-full">
+            <h3 className="text-xl font-semibold mb-4">
+              Prescription Details - {selectedPrescription.name}
+            </h3>
+            <div className="bg-gray-50 p-4 rounded-md">
+              <pre className="whitespace-pre-wrap">{decryptedContent}</pre>
+            </div>
+            <button
+              onClick={() => {
+                setSelectedPrescription(null);
+                setDecryptedContent(null);
+              }}
+              className="mt-4 py-2 px-4 bg-gray-600 hover:bg-gray-700 text-white rounded-md transition-colors"
+            >
+              Close
+            </button>
+          </div>
         </div>
       )}
     </div>

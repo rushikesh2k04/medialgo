@@ -1,34 +1,80 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useWallet } from '@txnlab/use-wallet-react';
-import * as methods from '../../methods';
+import * as algokit from '@algorandfoundation/algokit-utils';
+import { getAlgodConfigFromViteEnvironment } from '../../utils/network/getAlgoClientConfigs';
+import { optIn } from '../../methods';
 
-const PatientsMarketplace: React.FC = () => {
+interface NFT {
+  id: bigint;
+  name: string;
+  metadata?: string;
+}
+
+const PatientMarketplace: React.FC = () => {
   const { activeAddress, transactionSigner } = useWallet();
-  const [nfts, setNfts] = useState([]);
+  const [nfts, setNfts] = useState<NFT[]>([]);
+  const [loading, setLoading] = useState<{ [key: string]: boolean }>({});
+
+  const algodConfig = getAlgodConfigFromViteEnvironment();
+  const algorand = algokit.AlgorandClient.fromConfig({ algodConfig });
 
   useEffect(() => {
-    // Fetch NFTs available for the patient to opt-in
-    // setNfts(fetchedNFTs);
+    // TODO: Implement fetching available NFTs
+    // This would typically come from your backend or the Algorand indexer
   }, []);
 
   const handleOptIn = async (assetId: bigint) => {
-    await methods.optInAsset(algorand, activeAddress!, transactionSigner, assetId);
-    alert(`Opted in to Asset ID: ${assetId}`);
+    if (!activeAddress || !transactionSigner) {
+      alert('Please connect your wallet first');
+      return;
+    }
+
+    setLoading({ ...loading, [assetId.toString()]: true });
+    try {
+      await optIn(algorand, transactionSigner, activeAddress, assetId)();
+      alert('Successfully opted in to the NFT!');
+    } catch (error) {
+      console.error('Error opting in:', error);
+      alert('Failed to opt in to the NFT');
+    } finally {
+      setLoading({ ...loading, [assetId.toString()]: false });
+    }
   };
 
   return (
-    <div className="patients-marketplace-container">
-      <h2>Available NFTs</h2>
-      <div className="nft-list">
+    <div className="space-y-6">
+      <h2 className="text-2xl font-semibold text-gray-800">Available Prescriptions</h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {nfts.map((nft) => (
-          <div key={nft.assetId} className="nft-card">
-            <h3>{nft.assetName}</h3>
-            <button onClick={() => handleOptIn(nft.assetId)}>Opt-In</button>
+          <div key={nft.id.toString()} className="bg-white rounded-lg shadow-md p-6 border border-gray-200">
+            <h3 className="text-xl font-semibold mb-2">{nft.name}</h3>
+            <p className="text-gray-600 mb-4">ID: {nft.id.toString()}</p>
+            {nft.metadata && (
+              <p className="text-sm text-gray-500 mb-4">{nft.metadata}</p>
+            )}
+            <button
+              onClick={() => handleOptIn(nft.id)}
+              disabled={loading[nft.id.toString()]}
+              className={`w-full py-2 px-4 rounded-md text-white transition-colors ${
+                loading[nft.id.toString()]
+                  ? 'bg-gray-400 cursor-not-allowed'
+                  : 'bg-teal-600 hover:bg-teal-700'
+              }`}
+            >
+              {loading[nft.id.toString()] ? 'Processing...' : 'Opt In'}
+            </button>
           </div>
         ))}
+        
+        {nfts.length === 0 && (
+          <div className="col-span-full text-center py-8 text-gray-500">
+            No prescriptions available at the moment.
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
-export default PatientsMarketplace;
+export default PatientMarketplace;
